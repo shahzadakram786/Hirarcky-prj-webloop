@@ -1,0 +1,23 @@
+types: [ {
+    name: "front-end",
+    developers: [ {
+        name: "shahzad", skill: "html,css,js"
+    }
+    ,
+    {
+        name: "danial", skill: "html,css,js"
+    }
+    ,
+    {
+        name: "shahzain", skill: "html,css,js"
+    }
+    ],
+}
+
+],
+name: "back-end",
+developers: [ {
+    name: "Nasir", skill: ""
+}
+
+]
