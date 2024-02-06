@@ -1,23 +1,12 @@
-types: [ {
-    name: "front-end",
-    developers: [ {
-        name: "shahzad", skill: "html,css,js"
-    }
-    ,
-    {
-        name: "danial", skill: "html,css,js"
-    }
-    ,
-    {
-        name: "shahzain", skill: "html,css,js"
-    }
-    ],
+* {
+    margin: 0;
+    padding: 0;
 }
 
-],
-name: "back-end",
-developers: [ {
-    name: "Nasir", skill: ""
+body {
+    background-color: aquamarine;
 }
 
-]
+.container {
+    background-color: aqua;
+}

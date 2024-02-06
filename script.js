@@ -1,3 +1,5 @@
+let cont = document.querySelectorAll(".container");
+let doc = document.querySelectorAll(".main");
 const Data = {
     level: 1,
     name: "Ceo",
@@ -53,10 +55,29 @@ const Data = {
 
             }, {
                 name: "Mansoor"
-            }. {
+
+            }, {
                 name: "AliAbbas"
             }]
         }
     }
+
+}
+
+
+for (let i = 0; i < Data.length; i++) {
+    doc.innerHTML +=
+        `
+        <div class="cards">
+        
+        
+        
+        
+        
+        
+        </div>
+
+
+        `
 
 }
