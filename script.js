@@ -1,6 +1,6 @@
 let cont = document.querySelectorAll(".container");
 let doc = document.querySelectorAll(".main");
-const Data = {
+const getTreeData = {
     level: 1,
     name: "Ceo",
     hir: {
@@ -69,15 +69,13 @@ for (let i = 0; i < Data.length; i++) {
     doc.innerHTML +=
         `
         <div class="cards">
-        
-        
-        
-        
-        
-        
-        </div>
+        <h1>Webloop</h1>
+        <hr/>
+        <h2>${Data.level}</h2>
+        <p>${Data.name}</p>
+             </div>
 
 
-        `
+    `
 
 }
