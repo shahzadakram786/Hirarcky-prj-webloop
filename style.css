@@ -7,6 +7,11 @@ body {
     background-color: aquamarine;
 }
 
+.Front-End {
+    display: flex;
+    flex-direction: column;
+}
+
 h2 {
     margin-top: 2rem;
     text-align: center;
@@ -26,10 +31,17 @@ h2 {
     margin: auto;
 }
 
-.V_line {
+.V_one {
     width: 30%;
     height: 2px;
     background-color: yellow;
+}
+
+.V_two {
+    width: 75%;
+    height: 2px;
+    background-color: yellow;
+    align-self: center;
 }
 
 button {
@@ -40,11 +52,10 @@ button {
 }
 
 .secdiv {
+    padding: 0 5px;
     display: flex;
-    /* background-color: red; */
-    width: 40%;
+    background-color: red;
     justify-content: space-between;
-    margin-left: 20px;
 }
 
 .Developers {
@@ -53,6 +64,24 @@ button {
     width: 100%;
 }
 
+.thrdiv {
+    padding: 0 5px;
+    display: flex;
+    background-color: red;
+    justify-content: space-between;
+}
+
+.MainDiv {
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    background-color: green;
+    height: auto;
+    width: 50%;
+}
+
+
+}
 
 /* .butndiv {
     background-color: yellow;
@@ -110,9 +139,7 @@ button {
 }
  */
 
-
 /* //second attempt */
-
 
 /* 
 .node {
@@ -160,7 +187,6 @@ button {
     line-height: 32px;
     text-align: center;
 } */
-
 text-align: center;
 
 }
