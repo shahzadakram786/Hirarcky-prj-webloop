@@ -10,49 +10,64 @@
 
 <body>
 
-
-    <!DOCTYPE html>
-    <html lang="en">
-
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Organizational Data</title>
-        <link rel="stylesheet" href="styles.css">
-    </head>
-
-    <body>
-        <div id="data-container" class="container"></div>
-
-        <script src="script.js"></script>
-    </body>
-
-    </html>
-
-
     <div class="container">
         <h2>Weboop</h2>
         <div class="tree">
-            <div class="node node--root">
-                <div class="node__element ceo">CEO</div>
-                <div class="node__bottom-line"></div>
-                <div class="node__element ceo">Manager</div>
-                <div class="node__bottom-line"></div>
-                <div class="node__element ceo">Developers</div>
-                <div class="node__bottom-line"></div>
-                <div class="node__children">
-                    <div class="node">
-                        <div class="node__element">Front-end</div>
+            <div class="btnceo butndiv">
+                <button>Ceo</button>
+                <div class="bottom-line "></div>
+            </div>
+            <div class="btnManager butndiv">
+                <button>Manager</button>
+                <div class="bottom-line "></div>
+            </div>
+            <div class="btnDevelopers butndiv">
+                <button>Developers</button>
+                <div class="bottom-line "></div>
+            </div>
+            <div class="bottom-line-vertical"></div>
+
+            <div class="Developer_main">
+                <div class="Front">
+                    <div class="bottom-line "></div>
+                    <button>Front-End</button>
+                </div>
+                <div class="backe">
+                    <div class="bottom-line "></div>
+                    <button>Back-End</button>
+                </div>
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <!-- <div class="node node--root ">
+                <div class="node__element ceo ">CEO</div>
+                <div class="node__bottom-line "></div>
+                <div class="node__children ">
+                    <div class="node ">
+                        <div class="node__element ">Left Child</div>
                     </div>
-                    <div class="node">
-                        <div class="node__element">Back-end</div>
+                    <div class="node ">
+                        <div class="node__element ">Right Child</div>
 
                     </div>
                 </div>
 
 
 
-            </div>
+            </div> -->
 
 
         </div>
@@ -61,6 +76,6 @@
 
 </body>
 
-<script src="script.js"></script>
+<script src="script.js "></script>
 
 </html>

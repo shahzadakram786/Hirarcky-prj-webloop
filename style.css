@@ -14,12 +14,54 @@ h2 {
 
 .tree {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     margin-top: 30px;
     background-color: red;
     overflow: hidden;
-    justify-content: center;
 }
 
+.butndiv {
+    /* background-color: yellow; */
+    /* border-radius: 50%; */
+    width: 20%;
+    justify-content: center;
+    align-items: center;
+    text-align: auto;
+    align-self: center;
+}
+
+button {
+    padding: 20px;
+    width: 100%;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.bottom-line {
+    background-color: #cdcdcd;
+    width: 1px;
+    height: 40px;
+    margin: auto;
+}
+
+.Developer_main {
+    display: flex;
+    flex-direction: row;
+    background-color: green;
+    justify-content: space-around;
+}
+
+.bottom-line-vertical {
+    background-color: #cdcdcd;
+    width: 20rem;
+    height: 1px;
+    margin: auto;
+}
+
+
+/* 
 .node {
     display: flex;
     align-items: center;
@@ -64,4 +106,9 @@ h2 {
     font-size: 12px;
     line-height: 32px;
     text-align: center;
+} */
+
+text-align: center;
+
 }
+*/ */
