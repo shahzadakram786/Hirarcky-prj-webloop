@@ -32,13 +32,13 @@ h2 {
 }
 
 .V_one {
-    width: 30%;
+    width: 25.2%;
     height: 2px;
     background-color: yellow;
 }
 
 .V_two {
-    width: 75%;
+    width: 74%;
     height: 2px;
     background-color: yellow;
     align-self: center;
@@ -49,12 +49,13 @@ button {
     padding: 12px;
     border-radius: 10px;
     border: none;
+    cursor: pointer;
 }
 
 .secdiv {
     padding: 0 5px;
     display: flex;
-    background-color: red;
+    /* background-color: red; */
     justify-content: space-between;
 }
 
@@ -67,7 +68,7 @@ button {
 .thrdiv {
     padding: 0 5px;
     display: flex;
-    background-color: red;
+    /* background-color: red; */
     justify-content: space-between;
 }
 
@@ -75,13 +76,11 @@ button {
     justify-content: space-around;
     align-items: center;
     display: flex;
-    background-color: green;
+    /* background-color: green; */
     height: auto;
     width: 50%;
 }
 
-
-}
 
 /* .butndiv {
     background-color: yellow;
@@ -139,7 +138,9 @@ button {
 }
  */
 
+
 /* //second attempt */
+
 
 /* 
 .node {
@@ -187,7 +188,3 @@ button {
     line-height: 32px;
     text-align: center;
 } */
-text-align: center;
-
-}
-*/ */

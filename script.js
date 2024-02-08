@@ -1,5 +1,7 @@
 let cont = document.querySelectorAll(".container");
-let doc = document.querySelectorAll(".main");
+let docfirst = document.querySelectorAll(".firstdiv");
+let docCeo = document.querySelectorAll(".CeoDiv");
+let docManagr = document.querySelector(".ManagerDiv")
 const getTreeData = {
     level: 1,
     name: "Ceo",
