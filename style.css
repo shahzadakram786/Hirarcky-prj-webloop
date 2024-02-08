@@ -76,7 +76,6 @@ button {
     justify-content: space-around;
     align-items: center;
     display: flex;
-    /* background-color: green; */
     height: auto;
     width: 50%;
 }
