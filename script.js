@@ -5,10 +5,13 @@ let docManagr = document.querySelector(".ManagerDiv")
 const deta = {
     level: 1,
     name: "Sheraz ",
+    age: 30,
+    img: "./sheraz.png",
     hir: {
         level: 2,
         name: "manager",
         managers: {
+            img: "./saleem.jpeg",
             name: "saleem",
             age: 27
         },
@@ -67,17 +70,106 @@ const deta = {
 }
 
 
-// for (let i = 0; i < deta.length; i++) {
-//     let Data = deta[i];
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+let subCeo = document.querySelectorAll(".docCeo ")
+
+for (let i = 0; i < docCeo.length; i++) {
+    docCeo[i].innerHTML += `
+    <div class = "sheraz">
+
+    <img src="${deta.img}">
+    <div id="ceoInfo">
+    <h3>${deta.name} | age: ${deta.age}</h3>
+    
+    </div> 
+
+    </div>
+   
+
+    <button id = "Ceobtn">Ceo</button>
+    `;
+}
+
+
+
+
+
+
+
+// for hr manager 
+
+let HrDiv = document.querySelectorAll(".HrDiv ")
+
+for (let i = 0; i < HrDiv.length; i++) {
+    HrDiv[i].innerHTML += `
+    <div class = "Saleem">
+
+    <img src="${deta.hir.managers.img}">
+    <div id="hrInfo">
+    <h3>${deta.hir.managers.name} | age: ${deta.hir.managers.age}</h3>
+    
+    </div> 
+
+    </div>
+    <button id="hrbtn">Manager</button>
+
+   
+    `;
+}
+
+
+
+
+
+
 
 console.log("jelo")
 
-let Ceo = document.getElementById("Ceo");
+let Ceo = document.getElementById("Ceobtn");
 Ceo.addEventListener("click", () => {
+
     console.log(deta.name);
+    let img = document.querySelector(".sheraz img");
+    img.style.display = "block";
+
+    let cebtn = document.getElementById("Ceobtn");
+    cebtn.style.display = "none";
+    let ceoinfo = document.getElementById("ceoInfo")
+    ceoinfo.style.display = "block";
+
+
+
+
 })
 
-console.log("jelo")
+
 
 
 // now is for manager button
