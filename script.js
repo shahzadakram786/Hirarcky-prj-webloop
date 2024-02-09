@@ -1,13 +1,13 @@
-let cont = document.querySelectorAll(".container");
+let cont = document.getElementById("container");
 let docfirst = document.querySelectorAll(".firstdiv");
 let docCeo = document.querySelectorAll(".CeoDiv");
 let docManagr = document.querySelector(".ManagerDiv")
-const getTreeData = {
+const deta = {
     level: 1,
-    name: "Ceo",
+    name: "Sheraz ",
     hir: {
         level: 2,
-        name: manager,
+        name: "manager",
         managers: {
             name: "saleem",
             age: 27
@@ -67,17 +67,25 @@ const getTreeData = {
 }
 
 
-for (let i = 0; i < Data.length; i++) {
-    doc.innerHTML +=
-        `
-        <div class="cards">
-        <h1>Webloop</h1>
-        <hr/>
-        <h2>${Data.level}</h2>
-        <p>${Data.name}</p>
-             </div>
+for (let i = 0; i < deta.length; i++) {
+    // let Data = deta[i];
+    console.log("jelo")
+
+    let Ceo = document.getElementById("Ceo");
+    Ceo.addEventListener("click", () => {
+        console.log(deta.name);
+    })
+
+    console.log("jelo")
 
 
-    `
+    // now is for manager button
+
+    let Managr = document.getElementById("manger");
+    Managr.addEventListener("click", () => {
+        console.log(data[i].hir.managers.name)
+
+    });
+
 
 }
