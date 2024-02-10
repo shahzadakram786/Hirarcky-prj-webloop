@@ -106,7 +106,7 @@ for (let i = 0; i < docCeo.length; i++) {
 
     <img src="${deta.img}" class="img">
     <div id="ceoInfo">
-    <h3>${deta.name} | age: ${deta.age}</h3>
+    <h3>Name :${deta.name} <br> Age :${deta.age}</h3>
     
     </div> 
 
