@@ -178,13 +178,12 @@ for (let i = 0; i < HrDiv.length; i++) {
 
 let frontDev = document.querySelectorAll(".FDvlpr")
 for (let i = 0; i < frontDev.length; i++) {
-    frontDev[i].innerHTML +=
-        `
+    frontDev[i].innerHTML += `
         <div class="FDev dp2">
 
-        <img src="${deta.hir.managers.img}"  class="img">
+        <img src="${deta.hir.subhir1.types[0].img}"  id="imgSaqib">
 
-         <div id="FrDevInfo" class= "info">
+         <div id="FrDevInfo" class= "inf">
         <h3> Name :${deta.hir.subhir1.types[0].name} \t\t  Skills :${deta.hir.subhir1.types[0].skill}</h3>
 
         </div> 
@@ -195,15 +194,22 @@ for (let i = 0; i < frontDev.length; i++) {
 
 
 `;
+    console.log("jelo front")
 
-    const Front = document.getElementById("FrontDevbtn");
+    let Frnt = document.getElementById("FrontDevbtn");
 
-    Front.addEventListener("click", () => {
+    Frnt.addEventListener("click", () => {
         console.log(deta.hir.subhir1.types[0].name);
-        Front.style.display = "none";
+        let imgSaqib = document.querySelector(".FDev img");
+        imgSaqib.style.display = "block";
 
-        let Fdiv = document.querySelectorAll(".FDev");
+
+        Frnt.style.display = "none";
+        let Fdiv = document.querySelector(".FDev");
         Fdiv.style.display = "block";
+
+        let Finfo = document.getElementById("FrDevInfo");
+        Finfo.style.display = "block";
 
 
     })
@@ -238,22 +244,30 @@ Man.addEventListener("click", () => {
 
 // for front developers 
 
-const FrntDev = document.getElementById("FrontDev");
-FrntDev.addEventListener("click", () => {
-    const FrontDev = deta.hir.subhir1.types[0].developers;
+// const FrntDev = document.getElementById("FrontDev");
+// FrntDev.addEventListener("click", () => {
+//     const FrontDev = deta.hir.subhir1.types[0].developers;
 
-    for (let i = 0; i < FrontDev.length; i++) {
-        console.log(FrontDev[i].name);
-    }
-});
+//     for (let i = 0; i < FrontDev.length; i++) {
+//         console.log(FrontDev[i].name);
+//     }
+// });
+
+
+
+
 
 
 // for frontend interns 
+
+
+
 const frnt_intrns = document.getElementById("FrontInters");
 frnt_intrns.addEventListener("click", () => {
     const frntIntrns = deta.hir.subhir2.Interns;
     for (let i = 0; i < frntIntrns.length; i++) {
         console.log(frntIntrns[i].name);
+
     }
 
 

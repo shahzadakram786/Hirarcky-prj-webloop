@@ -52,7 +52,7 @@ h3 {
 }
 
 .V_one {
-    width: 26%;
+    width: 47.6%;
     height: 2px;
     background-image: linear-gradient(90deg, rgb(116, 128, 187) 0%, rgb(194, 58, 28) 50%, rgb(14, 36, 146) 100%);
 }
@@ -97,8 +97,9 @@ button:hover {
 .secdiv {
     padding: 0 5px;
     display: flex;
+    width: 50%;
     /* background-color: red; */
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .Developers {
@@ -110,7 +111,9 @@ button:hover {
 .thrdiv {
     padding: 0 5px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    /* background-color: magenta; */
+    width: 50%;
 }
 
 .MainDiv {
@@ -118,7 +121,7 @@ button:hover {
     align-items: center;
     display: flex;
     height: auto;
-    width: 50%;
+    width: 95%;
 }
 
 #sherzimg {
@@ -188,15 +191,24 @@ button:hover {
 }
 
 .FDev {
-    /* display: none; */
+    display: none;
     position: relative;
-    width: 65%;
+    width: 100%;
     margin: auto;
     border-radius: 10px;
-    filter: blur(4px);
+    /* filter: blur(4px); */
     transition: 0.5s ease-in-out;
     background-color: darkblue;
     z-index: 5;
+}
+
+#FrDevInfo {
+    width: 100%;
+    height: 100vh;
+}
+
+#imgSaqib {
+    width: 100%;
 }
 
 
