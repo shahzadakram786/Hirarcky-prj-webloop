@@ -4,13 +4,15 @@ let docCeo = document.querySelectorAll(".CeoDiv");
 let docManagr = document.querySelector(".ManagerDiv")
 const deta = {
     level: 1,
-    name: "Sheraz ",
+    title: "CEO",
+    name: "Sheraz",
     age: 30,
     img: "./sheraz.png",
     hir: {
         level: 2,
         name: "manager",
         managers: {
+            title: "HR",
             img: "./saleem.png",
             name: "saleem",
             age: 27
@@ -98,15 +100,16 @@ const deta = {
 
 
 
-let subCeo = document.querySelectorAll(".docCeo ")
+// let subCeo = document.querySelectorAll(".docCeo ")
 
 for (let i = 0; i < docCeo.length; i++) {
     docCeo[i].innerHTML += `
-    <div class = "sheraz">
+    <div class = "sheraz dp2">
+    <img src="${deta.img}" class="img" id="sherzimg">
+    <div id="ceoInfo" class= "info">
 
-    <img src="${deta.img}" class="img">
-    <div id="ceoInfo">
-    <h3>Name :${deta.name} <br> Age :${deta.age}</h3>
+    <h2>Title :${deta.title}</h2>
+    <h3>Name :${deta.name} \t\t Age :${deta.age}</h3>
     
     </div> 
 
@@ -130,8 +133,9 @@ for (let i = 0; i < HrDiv.length; i++) {
     <div class = "Saleem">
 
     <img src="${deta.hir.managers.img}" id="imgSalem" class="img">
-    <div id="hrInfo">
-    <h3>${deta.hir.managers.name} | age: ${deta.hir.managers.age}</h3>
+    <div id="hrInfo" class= "info">
+    <h2>Title :${deta.hir.managers.title}</h2>
+    <h3> Name :${deta.hir.managers.name} \t\t  Age :${deta.hir.managers.age}</h3>
     
     </div> 
 
