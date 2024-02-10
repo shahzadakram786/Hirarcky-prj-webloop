@@ -27,7 +27,7 @@ const deta = {
                             skill: "html,css,js"
                         },
                         {
-                            img: "./align.png",
+                            img: "./aliyan.png",
                             name: "Aliyan",
                             skill: "html,css,js"
                         },
@@ -179,17 +179,60 @@ for (let i = 0; i < HrDiv.length; i++) {
 let frontDev = document.querySelectorAll(".FDvlpr")
 for (let i = 0; i < frontDev.length; i++) {
     frontDev[i].innerHTML += `
-        <div class="FDev dp2">
+        <div class="FDev dp3">
 
-        <img src="${deta.hir.subhir1.types[0].img}"  id="imgSaqib">
+        <img src="${deta.hir.subhir1.types[0].developers[0].img}"  id="imgSaqib" class="img frnt_img">
 
-         <div id="FrDevInfo" class= "inf">
-        <h3> Name :${deta.hir.subhir1.types[0].name} \t\t  Skills :${deta.hir.subhir1.types[0].skill}</h3>
+         <div id="FrDevInfo" class= "info dvlprsDp">
+        <h2> Name :${deta.hir.subhir1.types[0].developers[0].name} \t\t  Skills :${deta.hir.subhir1.types[0].developers[0].skill}</h2>
 
         </div> 
 
         </div>
+        <div class="h_line"></div>
+
+
+        <div class="FDev2 dp3">
+
+        <img src="${deta.hir.subhir1.types[0].developers[1].img}"  id="imgAliyan" class="img frnt_img"" alt= "aliyan">
+
+         <div id="FrDevInfo2" class= "info dvlprsDp">
+        <h2> Name :${deta.hir.subhir1.types[0].developers[1].name} \t\t  Skills :${deta.hir.subhir1.types[0].developers[1].skill}</h2>
+
+        </div> 
+
+        </div>
+        <div class="h_line"></div>
+
+
+
+
+
+        <div class="FDev3 dp3">
+
+        <img src="${deta.hir.subhir1.types[0].developers[2].img}" class="img frnt_img" alt= "Shakir">
+
+         <div id="FrDevInfo3" class= "info dvlprsDp">
+        <h2> Name :${deta.hir.subhir1.types[0].developers[2].name} \t\t  Skills :${deta.hir.subhir1.types[0].developers[2].skill}</h2>
+
+        </div> 
+
+        </div>
+
+
+
+
+
+
+
+
         <button id="FrontDevbtn">Developers</button>
+        
+
+
+
+
+
 
 
 
@@ -205,11 +248,42 @@ for (let i = 0; i < frontDev.length; i++) {
 
 
         Frnt.style.display = "none";
+        let Fdiv2 = document.querySelector(".FDev2");
+        Fdiv2.style.display = "block";
+
+        let Finfo2 = document.getElementById("FrDevInfo2");
+        Finfo2.style.display = "block";
+
+
+        // 2nd developer aliyan
+
+
+        console.log(deta.hir.subhir1.types[0].name);
+        let imgAliyan = document.querySelector(".FDev2 img");
+        imgAliyan.style.display = "block";
+
+
+        Frnt.style.display = "none";
         let Fdiv = document.querySelector(".FDev");
         Fdiv.style.display = "block";
 
         let Finfo = document.getElementById("FrDevInfo");
         Finfo.style.display = "block";
+
+        // 3rd develpr from here      for shakir
+
+
+        // console.log(deta.hir.subhir1.types[0].name);
+        let imgShakir = document.querySelector(".FDev3 img");
+        imgShakir.style.display = "block";
+
+
+        Frnt.style.display = "none";
+        let Fdiv3 = document.querySelector(".FDev3");
+        Fdiv3.style.display = "block";
+
+        let Finfo3 = document.getElementById("FrDevInfo3");
+        Finfo3.style.display = "block";
 
 
     })
