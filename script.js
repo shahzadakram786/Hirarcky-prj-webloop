@@ -6,7 +6,7 @@ const deta = {
     level: 1,
     title: "CEO",
     name: "Sheraz",
-    age: 30,
+    age: 28,
     img: "./sheraz.png",
     hir: {
         level: 2,
@@ -22,14 +22,17 @@ const deta = {
             types: [{
                     name: "front-end",
                     developers: [{
+                            img: "./saqib.png",
                             name: "saqib",
                             skill: "html,css,js"
                         },
                         {
+                            img: "./align.png",
                             name: "Aliyan",
                             skill: "html,css,js"
                         },
                         {
+                            img: "./shakir.png",
                             name: "Shakir",
                             skill: "html,css,js"
                         }
@@ -106,7 +109,9 @@ for (let i = 0; i < docCeo.length; i++) {
     docCeo[i].innerHTML += `
     <div class = "sheraz dp2">
     <img src="${deta.img}" class="img" id="sherzimg">
+
     <div id="ceoInfo" class= "info">
+   <a href = "https://www.linkedin.com/in/sheraz-ali-0215ab205/"><i class="fa-brands fa-linkedin-in"></i></a>
 
     <h2>Title :${deta.title}</h2>
     <h3>Name :${deta.name} \t\t Age :${deta.age}</h3>
@@ -130,10 +135,12 @@ let HrDiv = document.querySelectorAll(".HrDiv ")
 
 for (let i = 0; i < HrDiv.length; i++) {
     HrDiv[i].innerHTML += `
-    <div class = "Saleem">
+    <div class = "Saleem dp2">
 
     <img src="${deta.hir.managers.img}" id="imgSalem" class="img">
-    <div id="hrInfo" class= "info">
+    
+     <div id="hrInfo" class= "info">
+    <a href = "https://www.linkedin.com/in/saleem-muhammad-9676551b4/"><i class="fa-brands fa-linkedin-in"></i></a>
     <h2>Title :${deta.hir.managers.title}</h2>
     <h3> Name :${deta.hir.managers.name} \t\t  Age :${deta.hir.managers.age}</h3>
     
@@ -144,32 +151,64 @@ for (let i = 0; i < HrDiv.length; i++) {
 
    
     `;
+
+    console.log("jelo")
+
+    let Ceo = document.getElementById("Ceobtn");
+    Ceo.addEventListener("click", () => {
+
+        console.log(deta.name);
+        let img = document.querySelector(".sheraz img");
+        img.style.display = "block";
+
+        let cebtn = document.getElementById("Ceobtn");
+        cebtn.style.display = "none";
+        let ceoinfo = document.getElementById("ceoInfo")
+        ceoinfo.style.display = "block";
+
+
+
+
+    })
 }
 
 
 
 
 
+let frontDev = document.querySelectorAll(".FDvlpr")
+for (let i = 0; i < frontDev.length; i++) {
+    frontDev[i].innerHTML +=
+        `
+        <div class="FDev dp2">
+
+        <img src="${deta.hir.managers.img}"  class="img">
+
+         <div id="FrDevInfo" class= "info">
+        <h3> Name :${deta.hir.subhir1.types[0].name} \t\t  Skills :${deta.hir.subhir1.types[0].skill}</h3>
+
+        </div> 
+
+        </div>
+        <button id="FrontDevbtn">Developers</button>
 
 
-console.log("jelo")
 
-let Ceo = document.getElementById("Ceobtn");
-Ceo.addEventListener("click", () => {
+`;
 
-    console.log(deta.name);
-    let img = document.querySelector(".sheraz img");
-    img.style.display = "block";
+    const Front = document.getElementById("FrontDevbtn");
 
-    let cebtn = document.getElementById("Ceobtn");
-    cebtn.style.display = "none";
-    let ceoinfo = document.getElementById("ceoInfo")
-    ceoinfo.style.display = "block";
+    Front.addEventListener("click", () => {
+        console.log(deta.hir.subhir1.types[0].name);
+        Front.style.display = "none";
+
+        let Fdiv = document.querySelectorAll(".FDev");
+        Fdiv.style.display = "block";
 
 
+    })
+}
 
-
-})
 
 
 
@@ -194,12 +233,7 @@ Man.addEventListener("click", () => {
 // now evenlistener for front adn back
 
 
-const Front = document.getElementById("Frontend");
 
-Front.addEventListener("click", () => {
-    console.log(deta.hir.subhir1.types[0].name);
-
-})
 
 
 // for front developers 
