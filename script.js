@@ -11,7 +11,7 @@ const deta = {
         level: 2,
         name: "manager",
         managers: {
-            img: "./saleem.jpeg",
+            img: "./saleem.png",
             name: "saleem",
             age: 27
         },
@@ -104,15 +104,13 @@ for (let i = 0; i < docCeo.length; i++) {
     docCeo[i].innerHTML += `
     <div class = "sheraz">
 
-    <img src="${deta.img}">
+    <img src="${deta.img}" class="img">
     <div id="ceoInfo">
     <h3>${deta.name} | age: ${deta.age}</h3>
     
     </div> 
 
     </div>
-   
-
     <button id = "Ceobtn">Ceo</button>
     `;
 }
@@ -131,7 +129,7 @@ for (let i = 0; i < HrDiv.length; i++) {
     HrDiv[i].innerHTML += `
     <div class = "Saleem">
 
-    <img src="${deta.hir.managers.img}">
+    <img src="${deta.hir.managers.img}" id="imgSalem" class="img">
     <div id="hrInfo">
     <h3>${deta.hir.managers.name} | age: ${deta.hir.managers.age}</h3>
     
@@ -174,10 +172,17 @@ Ceo.addEventListener("click", () => {
 
 // now is for manager button
 
-const Man = document.getElementById("manger");
+const Man = document.getElementById("hrbtn");
 Man.addEventListener("click", () => {
     console.log(deta.hir.managers.name, '-', 'age :', deta.hir.managers.age)
+    let imgSlm = document.querySelector(".Saleem img");
+    imgSlm.style.display = "block"
 
+    let hrbtn = document.getElementById("hrbtn");
+    hrbtn.style.display = "none";
+
+    let hrInfo = document.getElementById("hrInfo");
+    hrInfo.style.display = "block";
 });
 
 
