@@ -70,6 +70,10 @@ h3 {
     align-self: center;
 }
 
+.nonelines {
+    display: none;
+}
+
 button {
     border: none;
     cursor: pointer;
@@ -119,7 +123,8 @@ button:hover {
 .intrns {
     display: flex;
     flex-direction: column;
-    margin: auto;
+    align-items: start;
+    /* margin: auto; */
     /* justify-content: space-between; */
     background-color: #43871c;
     width: 100%;

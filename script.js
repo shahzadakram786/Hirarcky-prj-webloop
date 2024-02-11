@@ -189,7 +189,7 @@ for (let i = 0; i < frontDev.length; i++) {
         </div> 
 
         </div>
-        <div class="h_line"></div>
+        <div class="h_line nonelines" ></div>
 
 
         <div class="FDev2 dp3">
@@ -202,7 +202,7 @@ for (let i = 0; i < frontDev.length; i++) {
         </div> 
 
         </div>
-        <div class="h_line"></div>
+        <div class="h_line nonelines" ></div>
 
 
 
