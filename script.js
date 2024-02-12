@@ -122,8 +122,10 @@ Ceo.addEventListener("click", () => {
 </div>
 
 `
+            // Ceo.style.display = Ceo.style.display === 'none' ? 'block' : 'none';
     }
-    Ceo.style.display === 'none' ? Ceo.style.display = 'block' : Ceo.style.display = 'none';
+
+
 });
 
 

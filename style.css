@@ -274,6 +274,13 @@ button:hover {
     align-content: space-between; */
 }
 
+.frdp {
+    align-self: self-start;
+    display: flex;
+    flex: wrap;
+    flex-direction: column;
+}
+
 
 /* from this line interns css will apply  */
 
@@ -292,6 +299,11 @@ button:hover {
 
 
 /* for backdevelopers */
+
+#B_Dvlpr {
+    align-self: center;
+    margin: auto;
+}
 
 .B_img {
     background: linear-gradient(45deg, #ac50ef, #7059fb 50%, #2ecff6);
