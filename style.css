@@ -65,15 +65,11 @@ h3 {
 }
 
 .V_two {
-    width: 67.5%;
+    width: 80.5%;
     height: 2px;
     background-image: linear-gradient(90deg, rgb(116, 128, 187) 0%, rgb(194, 58, 28) 50%, rgb(14, 36, 146) 100%);
     /* background-color: yellow; */
     align-self: center;
-}
-
-.nonelines {
-    /* display: none; */
 }
 
 button {
@@ -112,6 +108,7 @@ button:hover {
     /* background-color: red; */
     justify-content: center;
     height: auto;
+    margin-bottom: 6em;
 }
 
 .Developers {
@@ -119,8 +116,6 @@ button:hover {
     justify-content: space-between;
     /* background-color: #1C2487; */
     gap: 5em;
-    /* gap: 10em; */
-    /* width: 100%; */
 }
 
 .thrdiv {
@@ -147,7 +142,6 @@ button:hover {
 }
 
 .sheraz {
-    /* display: none; */
     margin-top: 2em;
     /* background: linear-gradient(45deg, #ac50ef, #7059fb 50%, #2ecff6); */
     position: relative;
@@ -181,7 +175,6 @@ button:hover {
 
 .info {
     position: absolute;
-    display: none;
     background-color: #5870fa24;
     width: 100%;
     backdrop-filter: blur(10px);
@@ -198,13 +191,17 @@ button:hover {
 }
 
 .img {
+    display: flex;
     background: linear-gradient(45deg, #ac50ef, #7059fb 50%, #2ecff6);
-    display: none;
     width: 70%;
     margin: auto;
     height: 100%;
     transition: 0.3s ease-in-out;
     border-radius: 10px 10px 0 0;
+}
+
+#FrDevInfo {
+    font-size: 0.7em;
 }
 
 
@@ -218,18 +215,19 @@ button:hover {
 }
 
 .FDev {
-    display: none;
-    /* position: relative; */
     margin: auto;
     border-radius: 10px;
     /* filter: blur(4px); */
     transition: 0.5s ease-in-out;
     /* background-color: darkblue; */
     z-index: 5;
+    height: auto;
+    width: auto;
 }
 
 .frntH2 {
     font-size: 0.7em;
+    height: auto;
 }
 
 #FrontDevbtn {
@@ -238,15 +236,14 @@ button:hover {
 }
 
 .dp3 {
-    width: 50%;
-    /* display: none; */
+    width: 40%;
     position: relative;
     /* width: 100%; */
     margin: auto;
     border-radius: 10px;
     filter: blur(4px);
     transition: 0.5s ease-in-out;
-    /* background-color: darkblue; */
+    background-color: darkblue;
     z-index: 5;
 }
 
@@ -256,6 +253,10 @@ button:hover {
     transform: scale(1.5);
     z-index: 6;
     /* margin-top: 10px; */
+}
+
+#F_Dvlpr {
+    /* width: 50%; */
 }
 
 
@@ -269,6 +270,11 @@ button:hover {
     width: 100%;
 }
 
+.frnt_img {
+    width: 50%;
+    height: auto;
+}
+
 
 /* for backdevelopers */
 
@@ -280,125 +286,3 @@ button:hover {
     transition: 0.3s ease-in-out;
     border-radius: 10px 10px 0 0;
 }
-
-.B_Dev {}
-
-.B_D_info {}
-
-
-/* #FrDevInfo {
-    width: 100%;
-} */
-
-
-/* #imgSaqib {
-    width: 100%;
-} */
-
-
-/* .butndiv {
-    background-color: yellow;
-    width: 20%;
-    text-align: auto;
-}
-
-button {
-    font-size: 0.6rem;
-    padding: 10px;
-    width: 70%;
-    border-radius: 20px;
-    border: none;
-    cursor: pointer;
-}
-
-.bottom-line {
-    background-color: #cdcdcd;
-    width: 1px;
-    height: 40px;
-    margin: auto;
-}
-
-.Front {
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
-
-.Developer_main {
-    display: flex;
-    flex-direction: row;
-    background-color: green;
-    justify-content: space-around;
-}
-
-.bottom-line-vertical {
-    background-color: #cdcdcd;
-    width: 20rem;
-    height: 1px;
-    margin: auto;
-}
-
-.Font_main {
-    background-color: blue;
-    display: flex;
-    width: 100%;
-    justify-content: space-around;
-}
-
-.frontbtn {
-    width: 40%;
-    align-self: center;
-}
- */
-
-
-/* //second attempt */
-
-
-/* 
-.node {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    margin: 0 20px;
-    position: relative;
-}
-
-.node__element::before {
-    content: '';
-    height: 20px;
-    width: 1px;
-    background-color: #dcdcdc;
-    display: block;
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: -20px;
-    margin: auto;
-}
-
-.node__bottom-line {
-    height: 20px;
-    width: 1px;
-    background-color: #dcdcdc;
-}
-
-.node__children {
-    display: flex;
-    padding: 20px;
-    border-top: 1px solid #dcdcdc;
-    align-items: center;
-}
-
-.node__element {
-    width: 40px;
-    height: 40px;
-    background-color: blueviolet;
-    border-radius: 5px;
-    min-width: 60px;
-    padding: 4px 8px;
-    font-size: 12px;
-    line-height: 32px;
-    text-align: center;
-} */
