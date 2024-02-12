@@ -154,11 +154,24 @@ button:hover {
     position: relative;
     border-radius: 10px;
     width: 100%;
+    /* background-color: red; */
     margin: auto;
     z-index: 5;
-    filter: blur(4px);
+    filter: blur(3px);
     transition: 0.5s ease-in-out;
 }
+
+.dp2 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    /* background-color: cadetblue; */
+}
+
+
+/* #ceoInfo {
+    width: 60%;
+    /* background-color: red; */
 
 .sheraz:hover,
 .Saleem:hover {
@@ -175,7 +188,7 @@ button:hover {
     width: 100%;
     margin: auto;
     border-radius: 10px;
-    filter: blur(4px);
+    filter: blur(3px);
     transition: 0.5s ease-in-out;
     z-index: 5;
 }
@@ -194,7 +207,7 @@ button:hover {
 }
 
 .info:hover {
-    box-shadow: 1px 1px 5px grey;
+    box-shadow: 1px 0 1px #ac50ef, -1px 0 1px #2ecff6;
 }
 
 .img {
@@ -209,7 +222,7 @@ button:hover {
 }
 
 .img:hover {
-    box-shadow: 4px 4px 16px #2ecff6, -4px -4px 16px #ac50ef;
+    box-shadow: 1px 1px 5px #ac50ef, -1px -1px 5px #2ecff6;
 }
 
 #FrDevInfo {
