@@ -43,15 +43,15 @@ const deta = {
                     developers: [{
                         img: "./aliyan.png",
                         name: "Asad",
-                        skill: "Nodejs/php/blockchan"
+                        skill: "Nodejs/php"
                     }, {
                         img: "./nasir.png",
                         name: "Nasir",
-                        skill: "Nodejs/php/blockchain"
+                        skill: "Nodejs/php"
                     }, {
                         img: "./shakir.png",
                         name: "Kashif",
-                        skill: "Python/Django"
+                        skill: "Python/php"
                     }]
                 }
             ]
@@ -62,14 +62,14 @@ const deta = {
 
             name: "Interns",
             Interns: [{
-                img: "",
+                img: "./shahzad.png",
                 name: "shahzad",
             }, {
-                img: "",
+                img: "./shakir.png",
                 name: "Danial",
 
             }, {
-                img: "",
+                img: "./aliyan.png",
                 name: "Mansoor"
 
             }]
@@ -108,7 +108,7 @@ Ceo.addEventListener("click", () => {
         Ceo.style.display = "none";
         docCeo[i].innerHTML += `
 <div class = "sheraz dp2">
-<img src="${deta.img}" class="img" id="sherzimg">
+<img src="${deta.img}" class="img" >
 
 <div id="ceoInfo" class= "info">
 <a href = "https://www.linkedin.com/in/sheraz-ali-0215ab205/"><i class="fa-brands fa-linkedin-in"></i></a>
@@ -123,6 +123,7 @@ Ceo.addEventListener("click", () => {
 
 `
     }
+    Ceo.style.display === 'none' ? Ceo.style.display = 'block' : Ceo.style.display = 'none';
 });
 
 
@@ -206,10 +207,12 @@ let F_inters_btn = document.getElementById("FrontInters");
 
 F_inters_btn.addEventListener("click", () => {
     const FrntInts = deta.hir.subhir2.Interns;
-
+    F_inters_btn.style.display = "none";
     for (let i = 0; i < FrntInts.length; i++) {
         F_inters.innerHTML += `
+       
         <div class="FDev2 dp3">
+    
 
         <img src="${FrntInts[i].img}"  class="img frnt_img">
 
@@ -220,10 +223,12 @@ F_inters_btn.addEventListener("click", () => {
 
         </div>
         <div class="h_line nonelines" ></div>
+       
         
         `
 
     };
+    `<button>heelo</button>`
 })
 
 
@@ -281,29 +286,24 @@ const bck_dev = document.getElementById("B_Dvlpr");
 const bckDevBtn = document.getElementById("bckDev");
 bckDevBtn.addEventListener("click", () => {
     const backDvlpr = deta.hir.subhir1.types[1].developers;
+
+    bckDevBtn.style.display = "none";
     for (let i = 0; i < backDvlpr.length; i++) {
         console.log(backDvlpr[i].name);
 
-        bck_dev.innerHTML += ` <
-            div class = "B_Dev dp4" >
+        bck_dev.innerHTML += ` 
+        <div class = "B_Dev dp3" >
 
-                <
-                img src = "${backDvlpr[i].img}"
-            class = "B_img" >
+                <img src = "${backDvlpr[i].img}"class = "img">
 
-                <
-                div id = "B_Int_Dev_Info"
-            class = "B_D_info dvlprsDp" >
-                <
-                h2 > Name: $ { backDvlpr[i].name }
-            Skills: $ { backDvlpr[i].skill } < /h2>
+                <div id ="B_Int_Dev_Info" class ="info">
+                <h2 class="frntH2" bkh2> Name: ${backDvlpr[i].name} <br>
+            Skills: ${backDvlpr[i].skill} </h2>
 
-            <
-            /div> 
+            </div> 
 
-            <
-            /div> <
-            div class = "h_line nonelines" > < /div>
+            </div> 
+            <div class = "h_line nonelines" ></div>
             `
 
 
