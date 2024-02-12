@@ -41,12 +41,15 @@ const deta = {
                 {
                     name: "back-end",
                     developers: [{
+                        img: "./aliyan.png",
                         name: "Asad",
                         skill: "Nodejs/php/blockchan"
                     }, {
+                        img: "./nasir.png",
                         name: "Nasir",
                         skills: "Nodejs/php/blockchain"
                     }, {
+                        img: "./aliyan.png",
                         name: "Kashif",
                         skill: "Python/Django"
                     }]
@@ -361,7 +364,64 @@ for (let i = 0; i < InternsDev.length; i++) {
 
 `;
 
+    let F_IN_btn = document.getElementById("FrontInters");
 
+    F_IN_btn.addEventListener("click", () => {
+
+        // let dp3 = document.querySelectorAll(".dp3");
+        // dp3.style.display = "none";
+
+        // let nonelines = document.querySelector(".nonelines");
+        // nonelines.style.display = "none";
+
+        console.log(deta.hir.subhir1.types[0].name);
+        let imgShahzad = document.querySelector(".F_Interns_Dev img");
+        imgShahzad.style.display = "block";
+
+
+        F_IN_btn.style.display = "none";
+        let Fdiv2 = document.querySelector(".F_Interns_Dev2");
+        Fdiv2.style.display = "block";
+
+        let Finfo2 = document.getElementById("FrDevInfo2");
+        Finfo2.style.display = "block";
+
+
+        // let Nlines = document.querySelectorAll(".nonelines");
+        // Nlines.style.display = "block";
+
+        // 2nd developer aliyan
+
+
+        console.log(deta.hir.subhir1.types[0].name);
+        let imgDanial = document.querySelector(".F_Interns_Dev2 img");
+        imgDanial.style.display = "block";
+
+
+        Frnt.style.display = "none";
+        let F_i_div = document.querySelector(".F_Interns_Dev");
+        F_i_div.style.display = "block";
+
+        let F_i_info = document.getElementById("F_Int_Dev_Info2");
+        F_i_info.style.display = "block";
+
+        // 3rd develpr from here      for shakir
+
+
+        // console.log(deta.hir.subhir1.types[0].name);
+        let imgShakir = document.querySelector(".F_Interns_Dev3 img");
+        imgShakir.style.display = "block";
+
+
+        Frnt.style.display = "none";
+        let F_i_div3 = document.querySelector(".F_Interns_Dev3");
+        F_i_div3.style.display = "block";
+
+        let F_i_info3 = document.getElementById("F_Int_Dev_Info3");
+        F_i_info3.style.display = "block";
+
+
+    })
 
 
 
@@ -453,27 +513,27 @@ Back.addEventListener("click", () => {
 
 
 // for backdevelopers
-
-const bckDev = document.getElementById("bckDev");
-bckDev.addEventListener("click", () => {
+const bck_dev = document.querySelectorAll(".B_Dvlpr");
+const bckDevBtn = document.getElementById("bckDev");
+bckDevBtn.addEventListener("click", () => {
     const backDvlpr = deta.hir.subhir1.types[1].developers;
     for (let i = 0; i < backDvlpr.length; i++) {
         console.log(backDvlpr[i].name);
 
+        bck_dev.innerHTML += `
+                <div class="B_Dev dp4">
+        
+                <img src="${backDvlpr[i].img}"  class="B_img">
+        
+                 <div id="B_Int_Dev_Info" class= "info dvlprsDp">
+                <h2> Name :${backDvlpr[i]}   Skills :${backDvlpr[i].skill}</h2>
+        
+                </div> 
+        
+                </div>
+                <div class="h_line nonelines"></div>
+                `
+
 
     }
 });
-
-const bckintrns = document.getElementById("bckIntrns");
-bckintrns.addEventListener("click", () => {
-
-    const backIntrns = deta.hir.subhir1.types[1].developers;
-    for (let i = 0; i < backDvlpr.length; i++) {
-        console.log(backDvlpr[i].name);
-
-
-    }
-
-
-});
-// })
