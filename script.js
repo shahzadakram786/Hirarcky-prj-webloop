@@ -41,7 +41,7 @@ const deta = {
                 {
                     name: "back-end",
                     developers: [{
-                        img: "./aliyan.png",
+                        img: "./asad.png",
                         name: "Asad",
                         skill: "Nodejs/php"
                     }, {
@@ -49,7 +49,7 @@ const deta = {
                         name: "Nasir",
                         skill: "Nodejs/php"
                     }, {
-                        img: "./shakir.png",
+                        img: "./kashif.png",
                         name: "Kashif",
                         skill: "Python/php"
                     }]
@@ -246,16 +246,16 @@ F_inters_btn.addEventListener("click", () => {
 
 
 
-const frnt_intrns = document.getElementById("FrontInters");
-frnt_intrns.addEventListener("click", () => {
-    const frntIntrns = deta.hir.subhir2.Interns;
-    for (let i = 0; i < frntIntrns.length; i++) {
-        console.log(frntIntrns[i].name);
+// const frnt_intrns = document.getElementById("FrontInters");
+// frnt_intrns.addEventListener("click", () => {
+//     const frntIntrns = deta.hir.subhir2.Interns;
+//     for (let i = 0; i < frntIntrns.length; i++) {
+//         console.log(frntIntrns[i].name);
 
-    }
+//     }
 
 
-});
+// });
 
 
 
@@ -274,13 +274,7 @@ frnt_intrns.addEventListener("click", () => {
 
 
 // for back end
-const Back = document.getElementById("Back-End");
 
-Back.addEventListener("click", () => {
-
-    console.log(deta.hir.subhir1.types[1].name);
-
-});
 
 
 // for backdevelopers
@@ -295,7 +289,6 @@ bckDevBtn.addEventListener("click", () => {
 
         bck_dev.innerHTML += ` 
         <div class = "B_Dev dp3" >
-
                 <img src = "${backDvlpr[i].img}"class = "img">
 
                 <div id ="B_Int_Dev_Info" class ="info">

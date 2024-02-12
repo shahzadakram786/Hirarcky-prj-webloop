@@ -65,7 +65,7 @@ h3 {
 }
 
 .V_two {
-    width: 74.2%;
+    width: 60.2%;
     height: 2px;
     background-image: linear-gradient(90deg, rgb(116, 128, 187) 0%, rgb(194, 58, 28) 50%, rgb(14, 36, 146) 100%);
     /* background-color: yellow; */
@@ -120,9 +120,9 @@ button:hover {
 
 .Developers {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     /* background-color: #1C2487; */
-    gap: 5em;
+    gap: 2em;
 }
 
 .thrdiv {
@@ -243,7 +243,7 @@ button:hover {
 }
 
 .dp3 {
-    width: 40%;
+    width: 50%;
     position: relative;
     /* width: 100%; */
     margin: auto;
@@ -293,7 +293,7 @@ button:hover {
 }
 
 .frnt_img {
-    width: 50%;
+    width: 100%;
     height: auto;
 }
 
@@ -312,4 +312,13 @@ button:hover {
     height: 100%;
     transition: 0.3s ease-in-out;
     border-radius: 10px 10px 0 0;
+}
+
+.B_Dev {
+    width: 40%;
+}
+
+.B_Dev:hover {
+    transform: scale(1.4);
+    /* margin-top: 10px; */
 }
