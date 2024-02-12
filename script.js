@@ -59,15 +59,16 @@ const deta = {
 
             name: "Interns",
             Interns: [{
+                img: "",
                 name: "shahzad",
             }, {
+                img: "",
                 name: "Danial",
 
             }, {
+                img: "",
                 name: "Mansoor"
 
-            }, {
-                name: "AliAbbas"
             }]
         }
     }
@@ -173,7 +174,7 @@ for (let i = 0; i < HrDiv.length; i++) {
 }
 
 
-
+// from this line i have make the functions for the front end developer 
 
 
 let frontDev = document.querySelectorAll(".FDvlpr")
@@ -184,7 +185,7 @@ for (let i = 0; i < frontDev.length; i++) {
         <img src="${deta.hir.subhir1.types[0].developers[0].img}"  id="imgSaqib" class="img frnt_img">
 
          <div id="FrDevInfo" class= "info dvlprsDp">
-        <h2> Name :${deta.hir.subhir1.types[0].developers[0].name} \t\t  Skills :${deta.hir.subhir1.types[0].developers[0].skill}</h2>
+        <h2 class= "frntH2"> Name :${deta.hir.subhir1.types[0].developers[0].name} \t\t  Skills :${deta.hir.subhir1.types[0].developers[0].skill}</h2>
 
         </div> 
 
@@ -197,7 +198,7 @@ for (let i = 0; i < frontDev.length; i++) {
         <img src="${deta.hir.subhir1.types[0].developers[1].img}"  id="imgAliyan" class="img frnt_img"" alt= "aliyan">
 
          <div id="FrDevInfo2" class= "info dvlprsDp">
-        <h2> Name :${deta.hir.subhir1.types[0].developers[1].name} \t\t  Skills :${deta.hir.subhir1.types[0].developers[1].skill}</h2>
+        <h2 class= "frntH2"> Name :${deta.hir.subhir1.types[0].developers[1].name} \t\t  Skills :${deta.hir.subhir1.types[0].developers[1].skill}</h2>
 
         </div> 
 
@@ -213,7 +214,7 @@ for (let i = 0; i < frontDev.length; i++) {
         <img src="${deta.hir.subhir1.types[0].developers[2].img}" class="img frnt_img" alt= "Shakir">
 
          <div id="FrDevInfo3" class= "info dvlprsDp">
-        <h2> Name :${deta.hir.subhir1.types[0].developers[2].name} \t\t  Skills :${deta.hir.subhir1.types[0].developers[2].skill}</h2>
+        <h2 class= "frntH2"> Name :${deta.hir.subhir1.types[0].developers[2].name} \t\t  Skills :${deta.hir.subhir1.types[0].developers[2].skill}</h2>
 
         </div> 
 
@@ -255,6 +256,9 @@ for (let i = 0; i < frontDev.length; i++) {
         Finfo2.style.display = "block";
 
 
+        // let Nlines = document.querySelectorAll(".nonelines");
+        // Nlines.style.display = "block";
+
         // 2nd developer aliyan
 
 
@@ -287,6 +291,81 @@ for (let i = 0; i < frontDev.length; i++) {
 
 
     })
+}
+
+// fron this line i will make functionality forfront end interns
+
+
+
+
+
+let InternsDev = document.querySelectorAll(".intrns")
+for (let i = 0; i < InternsDev.length; i++) {
+    InternsDev[i].innerHTML += `
+        <div class="F_Interns_Dev dp3">
+
+        <img src="${deta.hir.subhir1.types[0].developers[0].img}"  id="imgSaqib" class="img frnt_img">
+
+         <div id="F_Int_Dev_Info" class= "info dvlprsDp">
+        <h2> Name :${deta.hir.subhir1.types[0].developers[0].name} \t\t  Skills :${deta.hir.subhir1.types[0].developers[0].skill}</h2>
+
+        </div> 
+
+        </div>
+        <div class="h_line nonelines" ></div>
+
+
+        <div class="F_Interns_Dev2 dp3">
+
+        <img src="${deta.hir.subhir1.types[0].developers[1].img}"  id="imgAliyan" class="img frnt_img"" alt= "aliyan">
+
+         <div id="F_Int_Dev_Info2" class= "info dvlprsDp">
+        <h2> Name :${deta.hir.subhir1.types[0].developers[1].name} \t\t  Skills :${deta.hir.subhir1.types[0].developers[1].skill}</h2>
+
+        </div> 
+
+        </div>
+        <div class="h_line nonelines" ></div>
+
+
+
+
+
+        <div class="F_Interns_Dev3 dp3">
+
+        <img src="${deta.hir.subhir1.types[0].developers[2].img}" class="img frnt_img" alt= "Shakir">
+
+         <div id="F_Int_Dev_Info3" class= "info dvlprsDp">
+        <h2> Name :${deta.hir.subhir1.types[0].developers[2].name} \t\t  Skills :${deta.hir.subhir1.types[0].developers[2].skill}</h2>
+
+        </div> 
+
+        </div>
+
+
+
+
+
+
+
+
+        
+        <button id="FrontInters">Inters_stu</button>
+
+
+
+
+
+
+
+
+`;
+
+
+
+
+
+
 }
 
 
