@@ -19,6 +19,7 @@ body {
 .Front-End {
     display: flex;
     flex-direction: column;
+    width: 90%;
 }
 
 #Frontend {
@@ -116,22 +117,11 @@ button:hover {
     display: flex;
     justify-content: space-between;
     background-color: #1C2487;
+    gap: 5em;
     /* gap: 10em; */
-    width: 100%;
+    /* width: 100%; */
 }
 
-.intrns {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    /* margin: auto; */
-    /* justify-content: space-between; */
-    background-color: #43871c;
-    width: 100%;
-}
-
-
-}
 .thrdiv {
     padding: 0 5px;
     display: flex;
@@ -140,6 +130,7 @@ button:hover {
     width: 50%;
     height: auto;
 }
+
 .MainDiv {
     justify-content: space-around;
     align-items: center;
@@ -147,17 +138,16 @@ button:hover {
     height: auto;
     width: 95%;
 }
+
 #sherzimg {
     /* margin-top: -10px; */
-    
     object-fit: cover;
 }
+
 .sheraz {
     /* display: none; */
-    
     margin-top: 2em;
     /* background: linear-gradient(45deg, #ac50ef, #7059fb 50%, #2ecff6); */
-    
     position: relative;
     border-radius: 10px;
     width: 40%;
@@ -166,6 +156,7 @@ button:hover {
     filter: blur(4px);
     transition: 0.5s ease-in-out;
 }
+
 .sheraz:hover,
 .Saleem:hover {
     filter: blur(0px);
@@ -174,9 +165,9 @@ button:hover {
     z-index: 6;
     margin-top: 10px;
 }
+
 .Saleem {
     /* background: linear-gradient(45deg, #ac50ef, #7059fb 50%, #2ecff6); */
-    
     position: relative;
     width: 65%;
     margin: auto;
@@ -185,6 +176,7 @@ button:hover {
     transition: 0.5s ease-in-out;
     z-index: 5;
 }
+
 .info {
     position: absolute;
     display: none;
@@ -198,9 +190,11 @@ button:hover {
     bottom: 0;
     transition: 0.5s ease-in-out;
 }
+
 .info:hover {
     box-shadow: 2px 2px 10px grey;
 }
+
 .img {
     background: linear-gradient(45deg, #ac50ef, #7059fb 50%, #2ecff6);
     display: none;
@@ -210,41 +204,67 @@ button:hover {
     transition: 0.3s ease-in-out;
     border-radius: 10px 10px 0 0;
 }
+
+
+/* from this line  i will apply  the css for front end developers  */
+
+.FDvlpr {
+    width: 100%;
+    background-color: rebeccapurple;
+    display: flex;
+    flex-direction: column;
+}
+
 .FDev {
     display: none;
     /* position: relative; */
-    
-    width: 100%;
     margin: auto;
     border-radius: 10px;
     /* filter: blur(4px); */
-    
     transition: 0.5s ease-in-out;
     background-color: darkblue;
     z-index: 5;
 }
+
+#FrontDevbtn {
+    width: 60%;
+    align-self: center;
+}
+
 .dp3 {
     width: 50%;
     display: none;
     position: relative;
     /* width: 100%; */
-    
     margin: auto;
     border-radius: 10px;
     /* filter: blur(4px); */
-    
     transition: 0.5s ease-in-out;
     background-color: darkblue;
     z-index: 5;
 }
 
+
+/* from this line interns css will apply  */
+
+.intrns {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #43871c;
+    width: 100%;
+}
+
+
 /* #FrDevInfo {
     width: 100%;
 } */
 
+
 /* #imgSaqib {
     width: 100%;
 } */
+
 
 /* .butndiv {
     background-color: yellow;
@@ -302,7 +322,9 @@ button {
 }
  */
 
+
 /* //second attempt */
+
 
 /* 
 .node {
