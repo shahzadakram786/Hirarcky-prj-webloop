@@ -205,6 +205,11 @@ button:hover {
     height: 100%;
     transition: 0.3s ease-in-out;
     border-radius: 10px 10px 0 0;
+    border-radius: 27px;
+}
+
+.img:hover {
+    box-shadow: 4px 4px 16px #2ecff6, -4px -4px 16px #ac50ef;
 }
 
 #FrDevInfo {
