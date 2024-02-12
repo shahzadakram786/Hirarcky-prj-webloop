@@ -34,6 +34,7 @@ h3 {
     color: #1C2487;
     text-align: center;
     font-size: medium;
+    /* z-index: 20; */
 }
 
 .firstdiv {
@@ -238,7 +239,7 @@ button:hover {
 
 .dp3 {
     width: 50%;
-    display: none;
+    /* display: none; */
     position: relative;
     /* width: 100%; */
     margin: auto;
@@ -267,6 +268,22 @@ button:hover {
     /* background-color: #43871c; */
     width: 100%;
 }
+
+
+/* for backdevelopers */
+
+.B_img {
+    background: linear-gradient(45deg, #ac50ef, #7059fb 50%, #2ecff6);
+    width: 70%;
+    margin: auto;
+    height: 100%;
+    transition: 0.3s ease-in-out;
+    border-radius: 10px 10px 0 0;
+}
+
+.B_Dev {}
+
+.B_D_info {}
 
 
 /* #FrDevInfo {

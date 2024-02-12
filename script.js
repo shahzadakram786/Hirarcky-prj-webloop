@@ -47,9 +47,9 @@ const deta = {
                     }, {
                         img: "./nasir.png",
                         name: "Nasir",
-                        skills: "Nodejs/php/blockchain"
+                        skill: "Nodejs/php/blockchain"
                     }, {
-                        img: "./aliyan.png",
+                        img: "./shakir.png",
                         name: "Kashif",
                         skill: "Python/Django"
                     }]
@@ -513,7 +513,7 @@ Back.addEventListener("click", () => {
 
 
 // for backdevelopers
-const bck_dev = document.querySelectorAll(".B_Dvlpr");
+const bck_dev = document.getElementById("B_Dvlpr");
 const bckDevBtn = document.getElementById("bckDev");
 bckDevBtn.addEventListener("click", () => {
     const backDvlpr = deta.hir.subhir1.types[1].developers;
@@ -525,8 +525,9 @@ bckDevBtn.addEventListener("click", () => {
         
                 <img src="${backDvlpr[i].img}"  class="B_img">
         
-                 <div id="B_Int_Dev_Info" class= "info dvlprsDp">
-                <h2> Name :${backDvlpr[i]}   Skills :${backDvlpr[i].skill}</h2>
+                 <div id="B_Int_Dev_Info" class= "B_D_info dvlprsDp">
+                <h2> Name :${backDvlpr[i].name} 
+                Skills :${backDvlpr[i].skill}</h2>
         
                 </div> 
         
