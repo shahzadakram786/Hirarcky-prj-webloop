@@ -1,84 +1,93 @@
 let cont = document.getElementById("container");
 let docfirst = document.querySelectorAll(".firstdiv");
 let docCeo = document.querySelectorAll(".CeoDiv");
-let docManagr = document.querySelector(".ManagerDiv")
+let docManagr = document.querySelector(".ManagerDiv");
 const deta = {
-    level: 1,
-    title: "CEO",
-    name: "Sheraz",
-    age: 28,
-    img: "./sheraz.png",
-    hir: {
-        level: 2,
-        name: "manager",
-        managers: {
-            title: "HR",
-            img: "./saleem.png",
-            name: "saleem",
-            age: 27
+  level: 1,
+  title: "CEO",
+  name: "Sheraz",
+  age: 28,
+  img: "./sheraz.png",
+  hir: {
+    level: 2,
+    name: "manager",
+    managers: {
+      title: "HR",
+      img: "./saleem.png",
+      name: "saleem",
+      age: 27,
+    },
+    subhir1: {
+      level: 3,
+      types: [
+        {
+          name: "front-end",
+          developers: [
+            {
+              img: "./saqib.png",
+              name: "saqib",
+              skill: "html,css,js",
+            },
+            {
+              img: "./aliyan.png",
+              name: "Aliyan",
+              skill: "html,css,js",
+            },
+            {
+              img: "./shakir.png",
+              name: "Shakir",
+              skill: "html,css,js",
+            },
+          ],
         },
-        subhir1: {
-            level: 3,
-            types: [{
-                    name: "front-end",
-                    developers: [{
-                            img: "./saqib.png",
-                            name: "saqib",
-                            skill: "html,css,js"
-                        },
-                        {
-                            img: "./aliyan.png",
-                            name: "Aliyan",
-                            skill: "html,css,js"
-                        },
-                        {
-                            img: "./shakir.png",
-                            name: "Shakir",
-                            skill: "html,css,js"
-                        }
-                    ],
-                },
-                {
-                    name: "back-end",
-                    developers: [{
-                        img: "./asad.png",
-                        name: "Asad",
-                        skill: "Nodejs/php"
-                    }, {
-                        img: "./nasir.png",
-                        name: "Nasir",
-                        skill: "Nodejs/php"
-                    }, {
-                        img: "./kashif.png",
-                        name: "Kashif",
-                        skill: "Python/php"
-                    }]
-                }
-            ]
-
+        {
+          name: "back-end",
+          developers: [
+            {
+              img: "./asad.png",
+              name: "Asad",
+              skill: "Nodejs/php",
+            },
+            {
+              img: "./nasir.png",
+              name: "Nasir",
+              skill: "Nodejs/php",
+            },
+            {
+              img: "./kashif.png",
+              name: "Kashif",
+              skill: "Python/php",
+            },
+            {
+              img: "./kashif.png",
+              name: "Kashif",
+              skill: "Python/php",
+            },
+          ],
         },
-        subhir2: {
-            level: 4,
+      ],
+    },
+    subhir2: {
+      level: 4,
 
-            name: "Interns",
-            Interns: [{
-                img: "./shahzad.png",
-                name: "shahzad",
-            }, {
-                img: "./shakir.png",
-                name: "Danial",
-
-            }, {
-                img: "./aliyan.png",
-                name: "Mansoor"
-
-            }]
-        }
-    }
-
-}
-
-
+      name: "Interns",
+      Interns: [
+        {
+          img: "./shahzad.png",
+          name: "shahzad",
+        },
+        {
+          img: "./shakir.png",
+          name: "Danial",
+        },
+        {
+          img: "./aliyan.png",
+          name: "Mansoor",
+        },
+      ],
+    },
+  },
+};
 
 // let subCeo = document.querySelectorAll(".docCeo ")
 
@@ -93,7 +102,7 @@ const deta = {
 //     <h2>Title :${deta.title}</h2>
 //     <h3>Name :${deta.name} \t\t Age :${deta.age}</h3>
 
-//     </div> 
+//     </div>
 
 //     </div>
 //     <button id = "Ceobtn">Ceo</button>
@@ -102,11 +111,9 @@ const deta = {
 // this is /for cep
 let Ceo = document.getElementById("Ceobtn");
 Ceo.addEventListener("click", () => {
-
-    for (let i = 0; i < docCeo.length; i++) {
-
-        Ceo.style.display = "none";
-        docCeo[i].innerHTML += `
+  for (let i = 0; i < docCeo.length; i++) {
+    Ceo.style.display = "none";
+    docCeo[i].innerHTML += `
 <div class = "sheraz dp2">
 <img src="${deta.img}" class="img" >
 
@@ -121,23 +128,19 @@ Ceo.addEventListener("click", () => {
 
 </div>
 
-`
-            // Ceo.style.display = Ceo.style.display === 'none' ? 'block' : 'none';
-    }
-
-
+`;
+    // Ceo.style.display = Ceo.style.display === 'none' ? 'block' : 'none';
+  }
 });
-
-
 
 // now is for manager button
 
 const Man = document.getElementById("hrbtn");
 Man.addEventListener("click", () => {
-    let HrDiv = document.querySelectorAll(".HrDiv ")
-    Man.style.display = "none";
-    for (let i = 0; i < HrDiv.length; i++) {
-        HrDiv[i].innerHTML += `
+  let HrDiv = document.querySelectorAll(".HrDiv ");
+  Man.style.display = "none";
+  for (let i = 0; i < HrDiv.length; i++) {
+    HrDiv[i].innerHTML += `
     <div class = "Saleem dp2">
 
     <img src="${deta.hir.managers.img}" id="imgSalem" class="img">
@@ -151,30 +154,22 @@ Man.addEventListener("click", () => {
 
     </div> `;
 
-        console.log(deta.name);
-
-    }
+    console.log(deta.name);
+  }
 });
 
+// from this line i have make the functions for the front end developer
 
-
-
-// from this line i have make the functions for the front end developer 
-
-
-
-
-const frnt_dev = document.getElementById("F_Dvlpr")
+const frnt_dev = document.getElementById("F_Dvlpr");
 const Frnt = document.getElementById("FrontDevbtn");
 
 Frnt.addEventListener("click", () => {
-    Frnt.style.display = "none";
-    const FrntDvlpr = deta.hir.subhir1.types[0].developers;
-    for (let i = 0; i < FrntDvlpr.length; i++) {
+  Frnt.style.display = "none";
+  const FrntDvlpr = deta.hir.subhir1.types[0].developers;
+  for (let i = 0; i < FrntDvlpr.length; i++) {
+    console.log(FrntDvlpr[i].name);
 
-        console.log(FrntDvlpr[i].name);
-
-        frnt_dev.innerHTML += `
+    frnt_dev.innerHTML += `
 
 
         <div class="FDev dp3">
@@ -190,28 +185,22 @@ Frnt.addEventListener("click", () => {
         </div>
         <div class="h_line nonelines" ></div>
         
-        `
-
-    }
-
-
+        `;
+  }
 });
 
 // fron this line i will make functionality forfront end interns
 
-
-
-// for the interns  of front end 
-
+// for the interns  of front end
 
 let F_inters = document.getElementById("intrns");
 let F_inters_btn = document.getElementById("FrontInters");
 
 F_inters_btn.addEventListener("click", () => {
-    const FrntInts = deta.hir.subhir2.Interns;
-    F_inters_btn.style.display = "none";
-    for (let i = 0; i < FrntInts.length; i++) {
-        F_inters.innerHTML += `
+  const FrntInts = deta.hir.subhir2.Interns;
+  F_inters_btn.style.display = "none";
+  for (let i = 0; i < FrntInts.length; i++) {
+    F_inters.innerHTML += `
        
         <div class="FDev2 dp3">
     
@@ -227,24 +216,12 @@ F_inters_btn.addEventListener("click", () => {
         <div class="h_line nonelines" ></div>
        
         
-        `
+        `;
+  }
+  `<button>heelo</button>`;
+});
 
-    };
-    `<button>heelo</button>`
-})
-
-
-
-
-
-
-
-
-
-
-// for frontend interns 
-
-
+// for frontend interns
 
 // const frnt_intrns = document.getElementById("FrontInters");
 // frnt_intrns.addEventListener("click", () => {
@@ -254,13 +231,7 @@ F_inters_btn.addEventListener("click", () => {
 
 //     }
 
-
 // });
-
-
-
-
-
 
 // const backDvlpr = deta.hir.subhir1.types[1].developers;
 
@@ -268,26 +239,19 @@ F_inters_btn.addEventListener("click", () => {
 // console.log(backDvlpr[i].name);
 // }
 
-
-
-
-
-
 // for back end
-
-
 
 // for backdevelopers
 const bck_dev = document.getElementById("B_Dvlpr");
 const bckDevBtn = document.getElementById("bckDev");
 bckDevBtn.addEventListener("click", () => {
-    const backDvlpr = deta.hir.subhir1.types[1].developers;
+  const backDvlpr = deta.hir.subhir1.types[1].developers;
 
-    bckDevBtn.style.display = "none";
-    for (let i = 0; i < backDvlpr.length; i++) {
-        console.log(backDvlpr[i].name);
+  bckDevBtn.style.display = "none";
+  for (let i = 0; i < backDvlpr.length; i++) {
+    console.log(backDvlpr[i].name);
 
-        bck_dev.innerHTML += ` 
+    bck_dev.innerHTML += ` 
         <div class = "B_Dev dp3" >
                 <img src = "${backDvlpr[i].img}"class = "img">
 
@@ -299,8 +263,6 @@ bckDevBtn.addEventListener("click", () => {
 
             </div> 
             <div class = "h_line nonelines" ></div>
-            `
-
-
-    }
+            `;
+  }
 });
