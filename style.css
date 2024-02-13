@@ -155,7 +155,7 @@ button:hover {
     /* background-color: red; */
     margin: auto;
     z-index: 5;
-    filter: blur(3px);
+    /* filter: blur(3px); */
     transition: 0.5s ease-in-out;
 }
 
@@ -183,20 +183,22 @@ button:hover {
 .Saleem {
     /* background: linear-gradient(45deg, #ac50ef, #7059fb 50%, #2ecff6); */
     position: relative;
-    width: 100%;
+    width: 80%;
     margin: auto;
     border-radius: 10px;
-    filter: blur(3px);
+    /* filter: blur(3px); */
     transition: 0.5s ease-in-out;
     z-index: 5;
 }
 
 .info {
     position: absolute;
-    background-color: #5870fa24;
+    /* background-color: #5870fa24; */
     width: 100%;
-    backdrop-filter: blur(10px);
+    /* backdrop-filter: blur(10px); */
     height: auto;
+    background: transparent;
+    /* background-color: red; */
     border-radius: 0 0 10px 10px;
     padding: 5px 0;
     text-align: center;
@@ -205,6 +207,7 @@ button:hover {
 }
 
 .info:hover {
+    backdrop-filter: blur(10px);
     box-shadow: 1px 0 1px #ac50ef, -1px 0 1px #2ecff6;
 }
 
@@ -225,7 +228,13 @@ button:hover {
 }
 
 #FrDevInfo {
-    font-size: 0.7em;
+    font-size: 1.2em;
+}
+
+.Inters>h2 {
+    /* background-color: red; */
+    font-size: 1.2em;
+    word-wrap: break-word;
 }
 
 
@@ -265,7 +274,7 @@ button:hover {
     /* width: 100%; */
     margin: auto;
     border-radius: 10px;
-    filter: blur(4px);
+    /* filter: blur(4px); */
     transition: 0.5s ease-in-out;
     /* background-color: darkblue; */
     z-index: 5;

@@ -136,8 +136,8 @@ const Man = document.getElementById("hrbtn");
 Man.addEventListener("click", () => {
     let HrDiv = document.querySelectorAll(".HrDiv ");
     Man.style.display = "none";
-    for (let i = 0; i < HrDiv.length; i++) {
-        HrDiv[i].innerHTML += `
+    // for (let i = 0; i < HrDiv.length; i++) {
+    HrDiv[0].innerHTML += `
     <div class = "Saleem dp2">
 
     <img src="${deta.hir.managers.img}" id="imgSalem" class="img">
@@ -153,8 +153,8 @@ Man.addEventListener("click", () => {
 
     `;
 
-        console.log(deta.name);
-    }
+    console.log(deta.name);
+
 });
 
 // from this line i have make the functions for the front end developer
@@ -205,8 +205,8 @@ F_inters_btn.addEventListener("click", () => {
 
         <img src="${FrntInts[i].img}"  class="img frnt_img">
 
-         <div id="FrDevInfo" class= "info dvlprsDp">
-          <h2 class= "frntH2"> Name : ${FrntInts[i].name}</h2>
+         <div id="FrDevInfo2" class= "info Inters">
+          <h2 class= "frntH2"> Name: ${FrntInts[i].name}</h2>
 
         </div> 
 
