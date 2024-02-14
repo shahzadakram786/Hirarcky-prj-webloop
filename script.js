@@ -94,7 +94,7 @@ Ceo.addEventListener("click", (e) => {
 
     console.log(docCeo);
 
-    function myFunction() {}
+    // function myFunction() {}
     if (docCeo.style.display === "none") {
 
         docCeo.style.display = "none";
