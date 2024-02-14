@@ -1,6 +1,6 @@
 let cont = document.getElementById("container");
 let docfirst = document.querySelectorAll(".firstdiv");
-let docCeo = document.querySelectorAll(".CeoDiv");
+
 let docManagr = document.querySelector(".ManagerDiv");
 const deta = {
     level: 1,
@@ -85,56 +85,53 @@ const deta = {
     },
 };
 
-// let subCeo = document.querySelectorAll(".docCeo ")
-
-// for (let i = 0; i < docCeo.length; i++) {
-//     docCeo[i].innerHTML += `
-//     <div class = "sheraz dp2">
-//     <img src="${deta.img}" class="img" id="sherzimg">
-
-//     <div id="ceoInfo" class= "info">
-//    <a href = "https://www.linkedin.com/in/sheraz-ali-0215ab205/"><i class="fa-brands fa-linkedin-in"></i></a>
-
-//     <h2>Title :${deta.title}</h2>
-//     <h3>Name :${deta.name} \t\t Age :${deta.age}</h3>
-
-//     </div>
-
-//     </div>
-//     <button id = "Ceobtn">Ceo</button>
-//     `;
-// }
 // this is /for cep
+let docCeo = document.querySelectorAll(".CeoDiv")[0];
 let Ceo = document.getElementById("Ceobtn");
-Ceo.addEventListener("click", () => {
+// const sheraz = document.querySelectorAll(".sheraz");
+Ceo.addEventListener("click", (e) => {
+
+
     console.log(docCeo);
+
+    function myFunction() {}
+    if (docCeo.style.display === "none") {
+
+        docCeo.style.display = "none";
+        e.target.innerHTML = "CEO";
+
+
+    } else {
+        docCeo.style.display = "block";
+        e.target.innerHTML = "Back";
+        e.target.style.background = "transparent";
+        e.target.innerHTML += `
+        <div class="sheraz dp2">
+        
+        <div class="image">
+        
+        <img src="${deta.img}" class="img" >
+        </div>
+        
+        <div id="ceoInfo" class= "info">
+        <a href = "https://www.linkedin.com/in/sheraz-ali-0215ab205/"><i class="fa-brands fa-linkedin-in"></i></a>
+        
+        <h2>Title :${deta.title}</h2>
+        <h3>Name :${deta.name} 
+         Age :${deta.age}</h3>
+        
+        </div> 
+        
+        </div>
+        
+        `;
+    }
+    // console.log("is this ", docCeo[0].style.display === "none");
+    // console.log(docCeo[0].style.display === "block");
+    // console.log(docCeo[0]);
     // for (let i = 0; i < docCeo.length; i++) {
-    Ceo.style.display = "none";
-    docCeo[0].innerHTML += `
-<div class = "sheraz dp2">
+    // Ceo.style.display = "block";
 
-<div class="image">
-
-<img src="${deta.img}" class="img" >
-</div>
-
-<div id="ceoInfo" class= "info">
-<a href = "https://www.linkedin.com/in/sheraz-ali-0215ab205/"><i class="fa-brands fa-linkedin-in"></i></a>
-
-<h2>Title :${deta.title}</h2>
-<h3>Name :${deta.name} 
- Age :${deta.age}</h3>
-
-</div> 
-
-</div>
-
-`;
-    // let bckbtnceo = document.getElementById("backbtn");
-    // bckbtnceo.addEventListener("click", () => {
-    //     Ceo.style.display = "inline-block";
-    //     docCeo[0].innerHTML = ``;
-    // });
 });
 // now is for manager button
 
