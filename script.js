@@ -112,7 +112,11 @@ Ceo.addEventListener("click", () => {
     Ceo.style.display = "none";
     docCeo[0].innerHTML += `
 <div class = "sheraz dp2">
+
+<div class="image">
+<button id="backbtn">back</button>
 <img src="${deta.img}" class="img" >
+</div>
 
 <div id="ceoInfo" class= "info">
 <a href = "https://www.linkedin.com/in/sheraz-ali-0215ab205/"><i class="fa-brands fa-linkedin-in"></i></a>
@@ -126,18 +130,19 @@ Ceo.addEventListener("click", () => {
 </div>
 
 `;
-    // Ceo.style.display = Ceo.style.display === 'none' ? 'block' : 'none';
-    // }
-});
+    let bckbtnceo = document.getElementById("backbtn");
+    bckbtnceo.addEventListener("click", () => {
 
-// now is for manager button
+    });
 
-const Man = document.getElementById("hrbtn");
-Man.addEventListener("click", () => {
-    let HrDiv = document.querySelectorAll(".HrDiv ");
-    Man.style.display = "none";
-    // for (let i = 0; i < HrDiv.length; i++) {
-    HrDiv[0].innerHTML += `
+    // now is for manager button
+
+    const Man = document.getElementById("hrbtn");
+    Man.addEventListener("click", () => {
+        let HrDiv = document.querySelectorAll(".HrDiv ");
+        Man.style.display = "none";
+        // for (let i = 0; i < HrDiv.length; i++) {
+        HrDiv[0].innerHTML += `
     <div class = "Saleem dp2">
 
     <img src="${deta.hir.managers.img}" id="imgSalem" class="img">
@@ -153,22 +158,22 @@ Man.addEventListener("click", () => {
 
     `;
 
-    console.log(deta.name);
+        console.log(deta.name);
 
-});
+    });
 
-// from this line i have make the functions for the front end developer
+    // from this line i have make the functions for the front end developer
 
-const frnt_dev = document.getElementById("F_Dvlpr");
-const Frnt = document.getElementById("FrontDevbtn");
+    const frnt_dev = document.getElementById("F_Dvlpr");
+    const Frnt = document.getElementById("FrontDevbtn");
 
-Frnt.addEventListener("click", () => {
-    Frnt.style.display = "none";
-    const FrntDvlpr = deta.hir.subhir1.types[0].developers;
-    for (let i = 0; i < FrntDvlpr.length; i++) {
-        console.log(FrntDvlpr[i].name);
+    Frnt.addEventListener("click", () => {
+        Frnt.style.display = "none";
+        const FrntDvlpr = deta.hir.subhir1.types[0].developers;
+        for (let i = 0; i < FrntDvlpr.length; i++) {
+            console.log(FrntDvlpr[i].name);
 
-        frnt_dev.innerHTML += `
+            frnt_dev.innerHTML += `
 
         <div class="FDev dp3">
 
@@ -184,21 +189,21 @@ Frnt.addEventListener("click", () => {
         <div class="h_line nonelines" ></div>
         
         `;
-    }
-});
+        }
+    });
 
-// fron this line i will make functionality forfront end interns
+    // fron this line i will make functionality forfront end interns
 
-// for the interns  of front end
+    // for the interns  of front end
 
-let F_inters = document.getElementById("intrns");
-let F_inters_btn = document.getElementById("FrontInters");
+    let F_inters = document.getElementById("intrns");
+    let F_inters_btn = document.getElementById("FrontInters");
 
-F_inters_btn.addEventListener("click", () => {
-    const FrntInts = deta.hir.subhir2.Interns;
-    F_inters_btn.style.display = "none";
-    for (let i = 0; i < FrntInts.length; i++) {
-        F_inters.innerHTML += `
+    F_inters_btn.addEventListener("click", () => {
+        const FrntInts = deta.hir.subhir2.Interns;
+        F_inters_btn.style.display = "none";
+        for (let i = 0; i < FrntInts.length; i++) {
+            F_inters.innerHTML += `
        
         <div class="FDev2 dp3">
     
@@ -215,41 +220,41 @@ F_inters_btn.addEventListener("click", () => {
        
         
         `;
-    }
-    `<button>heelo</button>`;
-});
+        }
+        `<button>heelo</button>`;
+    });
 
-// for frontend interns
+    // for frontend interns
 
-// const frnt_intrns = document.getElementById("FrontInters");
-// frnt_intrns.addEventListener("click", () => {
-//     const frntIntrns = deta.hir.subhir2.Interns;
-//     for (let i = 0; i < frntIntrns.length; i++) {
-//         console.log(frntIntrns[i].name);
+    // const frnt_intrns = document.getElementById("FrontInters");
+    // frnt_intrns.addEventListener("click", () => {
+    //     const frntIntrns = deta.hir.subhir2.Interns;
+    //     for (let i = 0; i < frntIntrns.length; i++) {
+    //         console.log(frntIntrns[i].name);
 
-//     }
+    //     }
 
-// });
+    // });
 
-// const backDvlpr = deta.hir.subhir1.types[1].developers;
+    // const backDvlpr = deta.hir.subhir1.types[1].developers;
 
-// for (let i = 0; i < backDvlpr.length; i++) {
-// console.log(backDvlpr[i].name);
-// }
+    // for (let i = 0; i < backDvlpr.length; i++) {
+    // console.log(backDvlpr[i].name);
+    // }
 
-// for back end
+    // for back end
 
-// for backdevelopers
-const bck_dev = document.getElementById("B_Dvlpr");
-const bckDevBtn = document.getElementById("bckDev");
-bckDevBtn.addEventListener("click", () => {
-    const backDvlpr = deta.hir.subhir1.types[1].developers;
+    // for backdevelopers
+    const bck_dev = document.getElementById("B_Dvlpr");
+    const bckDevBtn = document.getElementById("bckDev");
+    bckDevBtn.addEventListener("click", () => {
+        const backDvlpr = deta.hir.subhir1.types[1].developers;
 
-    bckDevBtn.style.display = "none";
-    for (let i = 0; i < backDvlpr.length; i++) {
-        console.log(backDvlpr[i].name);
+        bckDevBtn.style.display = "none";
+        for (let i = 0; i < backDvlpr.length; i++) {
+            console.log(backDvlpr[i].name);
 
-        bck_dev.innerHTML += ` 
+            bck_dev.innerHTML += ` 
         <div class = "B_Dev dp3" >
                 <img src = "${backDvlpr[i].img}"class = "img">
 
@@ -262,5 +267,7 @@ bckDevBtn.addEventListener("click", () => {
             </div> 
             <div class = "h_line nonelines" ></div>
             `;
-    }
+        }
+    });
+}
 });
