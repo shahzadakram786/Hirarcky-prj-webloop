@@ -105,8 +105,7 @@ const deta = {
 //     `;
 // }
 // this is /for cep
-let Ceo = document.querySelector(".Ceobtn")
-    // let Ceo = document.getElementById("Ceobtn");
+let Ceo = document.getElementById("Ceobtn");
 Ceo.addEventListener("click", () => {
     console.log(docCeo);
     // for (let i = 0; i < docCeo.length; i++) {
@@ -133,8 +132,8 @@ Ceo.addEventListener("click", () => {
 `;
     // let bckbtnceo = document.getElementById("backbtn");
     // bckbtnceo.addEventListener("click", () => {
-    //     Ceo.style.display = "block";
-    //     docCeo[0].innerHTML = ` <button class="Ceobtn">Ceo</button>`;
+    //     Ceo.style.display = "inline-block";
+    //     docCeo[0].innerHTML = ``;
     // });
 });
 // now is for manager button
@@ -144,13 +143,13 @@ Man.addEventListener("click", () => {
     let HrDiv = document.querySelectorAll(".HrDiv ");
     Man.style.display = "none";
     // for (let i = 0; i < HrDiv.length; i++) {
-    HrDiv[0].innerHTML += ` <div class = "Saleem dp2" >
+    HrDiv[0].innerHTML += ` <div class = "Saleem dp2">
 
-            <img src = "${deta.hir.managers.img}" id="imgSalem" class = "img" >
+            <img src = "${deta.hir.managers.img}" id="imgSalem" class = "img">
 
             <div id = "hrInfo" class = "info">
-            <a href = "https://www.linkedin.com/in/saleem-muhammad-9676551b4/" > <i class = "fa-brands fa-linkedin-in"> </i></a>
-        <h2> Title: ${deta.hir.managers.title} </h2>
+            <a href = "https://www.linkedin.com/in/saleem-muhammad-9676551b4/"> <i class = "fa-brands fa-linkedin-in" > </i></a>
+            <h2> Title: ${deta.hir.managers.title} </h2> 
             <h3> Name: ${deta.hir.managers.name}
             Age: ${deta.hir.managers.age} </h3>
 
@@ -218,12 +217,12 @@ F_inters_btn.addEventListener("click", () => {
         </div> 
 
         </div>
-        <div class = "h_line nonelines"> </div>
+        <div class = "h_line nonelines" > < /div>
 
 
         `;
     }
-    ` <button> heelo </button>`;
+    ` < button > heelo < /button>`;
 });
 
 // for frontend interns
