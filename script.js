@@ -105,7 +105,8 @@ const deta = {
 //     `;
 // }
 // this is /for cep
-let Ceo = document.getElementById("Ceobtn");
+let Ceo = document.querySelector(".Ceobtn")
+    // let Ceo = document.getElementById("Ceobtn");
 Ceo.addEventListener("click", () => {
     console.log(docCeo);
     // for (let i = 0; i < docCeo.length; i++) {
@@ -114,7 +115,7 @@ Ceo.addEventListener("click", () => {
 <div class = "sheraz dp2">
 
 <div class="image">
-<button id="backbtn">back</button>
+
 <img src="${deta.img}" class="img" >
 </div>
 
@@ -130,131 +131,132 @@ Ceo.addEventListener("click", () => {
 </div>
 
 `;
-    let bckbtnceo = document.getElementById("backbtn");
-    bckbtnceo.addEventListener("click", () => {
-
-    });
-
-    // now is for manager button
-
-    const Man = document.getElementById("hrbtn");
-    Man.addEventListener("click", () => {
-        let HrDiv = document.querySelectorAll(".HrDiv ");
-        Man.style.display = "none";
-        // for (let i = 0; i < HrDiv.length; i++) {
-        HrDiv[0].innerHTML += `
-    <div class = "Saleem dp2">
-
-    <img src="${deta.hir.managers.img}" id="imgSalem" class="img">
-    
-     <div id="hrInfo" class= "info">
-    <a href = "https://www.linkedin.com/in/saleem-muhammad-9676551b4/"><i class="fa-brands fa-linkedin-in"></i></a>
-    <h2>Title :${deta.hir.managers.title}</h2>
-    <h3> Name :${deta.hir.managers.name} \t\t  Age :${deta.hir.managers.age}</h3>
-    
-    </div>
-
-    </div> 
-
-    `;
-
-        console.log(deta.name);
-
-    });
-
-    // from this line i have make the functions for the front end developer
-
-    const frnt_dev = document.getElementById("F_Dvlpr");
-    const Frnt = document.getElementById("FrontDevbtn");
-
-    Frnt.addEventListener("click", () => {
-        Frnt.style.display = "none";
-        const FrntDvlpr = deta.hir.subhir1.types[0].developers;
-        for (let i = 0; i < FrntDvlpr.length; i++) {
-            console.log(FrntDvlpr[i].name);
-
-            frnt_dev.innerHTML += `
-
-        <div class="FDev dp3">
-
-        <img src="${FrntDvlpr[i].img}"  class="img frnt_img">
-
-         <div id="FrDevInfo" class= "info dvlprsDp">
-          <h2 class= "frntH2"> Name :${FrntDvlpr[i].name} <br>
-          Skills :${FrntDvlpr[i].skill}</h2>
-
-        </div> 
-
-        </div>
-        <div class="h_line nonelines" ></div>
-        
-        `;
-        }
-    });
-
-    // fron this line i will make functionality forfront end interns
-
-    // for the interns  of front end
-
-    let F_inters = document.getElementById("intrns");
-    let F_inters_btn = document.getElementById("FrontInters");
-
-    F_inters_btn.addEventListener("click", () => {
-        const FrntInts = deta.hir.subhir2.Interns;
-        F_inters_btn.style.display = "none";
-        for (let i = 0; i < FrntInts.length; i++) {
-            F_inters.innerHTML += `
-       
-        <div class="FDev2 dp3">
-    
-
-        <img src="${FrntInts[i].img}"  class="img frnt_img">
-
-         <div id="FrDevInfo2" class= "info Inters">
-          <h2 class= "frntH2"> Name: ${FrntInts[i].name}</h2>
-
-        </div> 
-
-        </div>
-        <div class="h_line nonelines" ></div>
-       
-        
-        `;
-        }
-        `<button>heelo</button>`;
-    });
-
-    // for frontend interns
-
-    // const frnt_intrns = document.getElementById("FrontInters");
-    // frnt_intrns.addEventListener("click", () => {
-    //     const frntIntrns = deta.hir.subhir2.Interns;
-    //     for (let i = 0; i < frntIntrns.length; i++) {
-    //         console.log(frntIntrns[i].name);
-
-    //     }
-
+    // let bckbtnceo = document.getElementById("backbtn");
+    // bckbtnceo.addEventListener("click", () => {
+    //     Ceo.style.display = "block";
+    //     docCeo[0].innerHTML = ` <button class="Ceobtn">Ceo</button>`;
     // });
+});
+// now is for manager button
 
-    // const backDvlpr = deta.hir.subhir1.types[1].developers;
+const Man = document.getElementById("hrbtn");
+Man.addEventListener("click", () => {
+    let HrDiv = document.querySelectorAll(".HrDiv ");
+    Man.style.display = "none";
+    // for (let i = 0; i < HrDiv.length; i++) {
+    HrDiv[0].innerHTML += ` <div class = "Saleem dp2" >
 
-    // for (let i = 0; i < backDvlpr.length; i++) {
-    // console.log(backDvlpr[i].name);
-    // }
+            <img src = "${deta.hir.managers.img}" id="imgSalem" class = "img" >
 
-    // for back end
+            <div id = "hrInfo" class = "info">
+            <a href = "https://www.linkedin.com/in/saleem-muhammad-9676551b4/" > <i class = "fa-brands fa-linkedin-in"> </i></a>
+        <h2> Title: ${deta.hir.managers.title} </h2>
+            <h3> Name: ${deta.hir.managers.name}
+            Age: ${deta.hir.managers.age} </h3>
 
-    // for backdevelopers
-    const bck_dev = document.getElementById("B_Dvlpr");
-    const bckDevBtn = document.getElementById("bckDev");
-    bckDevBtn.addEventListener("click", () => {
-        const backDvlpr = deta.hir.subhir1.types[1].developers;
+        </div>
 
-        bckDevBtn.style.display = "none";
-        for (let i = 0; i < backDvlpr.length; i++) {
-            console.log(backDvlpr[i].name);
+        </div> 
 
-            bck_dev.innerHTML += ` 
+        `;
+
+    console.log(deta.name);
+});
+
+// from this line i have make the functions for the front end developer
+
+const frnt_dev = document.getElementById("F_Dvlpr");
+const Frnt = document.getElementById("FrontDevbtn");
+
+Frnt.addEventListener("click", () => {
+    Frnt.style.display = "none";
+    const FrntDvlpr = deta.hir.subhir1.types[0].developers;
+    for (let i = 0; i < FrntDvlpr.length; i++) {
+        console.log(FrntDvlpr[i].name);
+
+        frnt_dev.innerHTML += `
+
+        <div class = "FDev dp3">
+
+            <img src = "${FrntDvlpr[i].img}"
+        class = "img frnt_img">
+
+            <div id = "FrDevInfo" class = "info dvlprsDp">
+            <h2 class = "frntH2"> Name: ${ FrntDvlpr[i].name } < br >
+            Skills: ${ FrntDvlpr[i].skill }</h2>
+
+        </div> 
+
+        </div> 
+        <div class = "h_line nonelines"> </div>
+
+        `;
+    }
+});
+
+// fron this line i will make functionality forfront end interns
+
+// for the interns  of front end
+
+let F_inters = document.getElementById("intrns");
+let F_inters_btn = document.getElementById("FrontInters");
+
+F_inters_btn.addEventListener("click", () => {
+    const FrntInts = deta.hir.subhir2.Interns;
+    F_inters_btn.style.display = "none";
+    for (let i = 0; i < FrntInts.length; i++) {
+        F_inters.innerHTML += `
+
+        <div class = "FDev2 dp3" >
+
+
+            <img src = "${FrntInts[i].img}" class = "img frnt_img">
+
+            <div id = "FrDevInfo2" class ="info Inters">
+            <h2 class = "frntH2">Name: ${ FrntInts[i].name }</h2>
+
+        </div> 
+
+        </div>
+        <div class = "h_line nonelines"> </div>
+
+
+        `;
+    }
+    ` <button> heelo </button>`;
+});
+
+// for frontend interns
+
+// const frnt_intrns = document.getElementById("FrontInters");
+// frnt_intrns.addEventListener("click", () => {
+//     const frntIntrns = deta.hir.subhir2.Interns;
+//     for (let i = 0; i < frntIntrns.length; i++) {
+//         console.log(frntIntrns[i].name);
+
+//     }
+
+// });
+
+// const backDvlpr = deta.hir.subhir1.types[1].developers;
+
+// for (let i = 0; i < backDvlpr.length; i++) {
+// console.log(backDvlpr[i].name);
+// }
+
+// for back end
+
+// for backdevelopers
+const bck_dev = document.getElementById("B_Dvlpr");
+const bckDevBtn = document.getElementById("bckDev");
+bckDevBtn.addEventListener("click", () => {
+    const backDvlpr = deta.hir.subhir1.types[1].developers;
+
+    bckDevBtn.style.display = "none";
+    for (let i = 0; i < backDvlpr.length; i++) {
+        console.log(backDvlpr[i].name);
+
+        bck_dev.innerHTML += ` 
         <div class = "B_Dev dp3" >
                 <img src = "${backDvlpr[i].img}"class = "img">
 
@@ -267,7 +269,5 @@ Ceo.addEventListener("click", () => {
             </div> 
             <div class = "h_line nonelines" ></div>
             `;
-        }
-    });
-}
+    }
 });
