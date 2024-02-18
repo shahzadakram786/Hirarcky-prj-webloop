@@ -115,35 +115,39 @@ Ceobtn.addEventListener("click", (e) => {
     </div>
     
     `;
-
-
-
-    // function myFunction() {}
-    if (docCeo[0].display == "none") {
-
-        console.log("if statement  = ", docCeo[0].style.display !== "none"); // docCeo[0].style.display = "none";
-        // cards.style.display == "none";
-
+    if (docCeo[0].style.display === "none" || docCeo[0].style.display === "") {
+        // CEO section is hidden or not displayed
+        docCeo[0].style.display = "block"; // Show the CEO section
+        e.target.innerHTML = "Back"; // Change CeoBtn text to "Back"
     } else {
-        console.log("else :", docCeo[0].style.display === "none");
-        // docCeo[0].style.display = "none";
-        var ceobackbtn = e.target.innerHTML = "Back";
-        // cards.style.display = "none";
-        e.target.style.display = "block";
-
-        //Ading and even listener for back
-
-
-
-
+        // CEO section is visible
+        docCeo[0].style.display = "none"; // Hide the CEO section
+        e.target.innerHTML = "CEO"; // Change CeoBtn text back to "CEO"
     }
-    ceobackbtn.addEventListener("click", () => {
-        console.log("ceobackbtn clicked");
-        // .target.style.display = "none";
-        docCeo[0].style.display == "none";
 
 
-    })
+    // if (docCeo[0].display == "none") {
+
+    //     console.log("if statement  = ", docCeo[0].style.display !== "none"); // docCeo[0].style.display = "none";
+
+
+    // } else {
+    //     console.log("else :", docCeo[0].style.display === "none");
+    //     var ceobackbtn = e.target.innerHTML = "Back";
+    //     e.target.style.display = "block";
+
+
+
+
+
+    // }
+    // ceobackbtn.addEventListener("click", () => {
+    //     console.log("ceobackbtn clicked");
+    //     // .target.style.display = "none";
+    //     docCeo[0].style.display == "none";
+
+
+    // })
 
 
 });
