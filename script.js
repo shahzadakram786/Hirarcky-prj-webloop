@@ -95,19 +95,9 @@ Ceobtn.addEventListener("click", (e) => {
     console.log(docCeo);
     const cardd = (e.target.innerHTML = "CEO");
     console.log("if : ", docCeo[0].style.display !== "block");
+    //below this line its my code for cards
 
-    // function myFunction() {}
-    if (docCeo[0].style.display === "none") {
-        console.log("docceoDisplayNone  = ", docCeo[0].style.display !== "none"); // docCeo[0].style.display = "none";
-        docCeo[0].style.display == "block";
-
-    } else {
-        console.log("else :", docCeo[0].style.display === "none");
-        // docCeo[0].style.display = "none";
-        e.target.innerHTML = "Back";
-        // e.target.style.background = "transparent";
-
-        docCeo[0].innerHTML = `
+    docCeo[0].innerHTML = `
     <div class="sheraz dp2">
     <div class="image">
     <img src="${deta.img}" class="img">
@@ -125,13 +115,39 @@ Ceobtn.addEventListener("click", (e) => {
     </div>
     
     `;
+
+
+
+    // function myFunction() {}
+    if (docCeo[0].display == "none") {
+
+        console.log("if statement  = ", docCeo[0].style.display !== "none"); // docCeo[0].style.display = "none";
+        // cards.style.display == "none";
+
+    } else {
+        console.log("else :", docCeo[0].style.display === "none");
+        // docCeo[0].style.display = "none";
+        var ceobackbtn = e.target.innerHTML = "Back";
+        // cards.style.display = "none";
+        e.target.style.display = "block";
+
+        //Ading and even listener for back
+
+
+
+
     }
-    // console.log("is this ", docCeo[0].style.display === "none");
-    // console.log(docCeo[0].style.display === "block");
-    // console.log(docCeo[0]);
-    // for (let i = 0; i < docCeo.length; i++) {
-    // Ceo.style.display = "block";
+    ceobackbtn.addEventListener("click", () => {
+        console.log("ceobackbtn clicked");
+        // .target.style.display = "none";
+        docCeo[0].style.display == "none";
+
+
+    })
+
+
 });
+
 // now is for manager button
 
 const Man = document.getElementById("hrbtn");
