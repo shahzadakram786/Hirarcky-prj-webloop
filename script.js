@@ -3,86 +3,90 @@ let docfirst = document.querySelectorAll(".firstdiv");
 
 let docManagr = document.querySelector(".ManagerDiv");
 const deta = {
-    level: 1,
-    title: "CEO",
-    name: "Sheraz",
-    age: 28,
-    img: "./sheraz.png",
-    hir: {
-        level: 2,
-        name: "manager",
-        managers: {
-            title: "HR",
-            img: "./saleem.png",
-            name: "saleem",
-            age: 27,
-        },
-        subhir1: {
-            level: 3,
-            types: [{
-                    name: "front-end",
-                    developers: [{
-                            img: "./saqib.png",
-                            name: "saqib",
-                            skill: "html,css,js",
-                        },
-                        {
-                            img: "./aliyan.png",
-                            name: "Aliyan",
-                            skill: "html,css,js",
-                        },
-                        {
-                            img: "./shakir.png",
-                            name: "Shakir",
-                            skill: "html,css,js",
-                        },
-                    ],
-                },
-                {
-                    name: "back-end",
-                    developers: [{
-                            img: "./asad.png",
-                            name: "Asad",
-                            skill: "Nodejs/php",
-                        },
-                        {
-                            img: "./nasir.png",
-                            name: "Nasir",
-                            skill: "Nodejs/php",
-                        },
-                        {
-                            img: "./kashif.png",
-                            name: "Kashif",
-                            skill: "Python/php",
-                        },
-                        {
-                            img: "./kashif.png",
-                            name: "Kashif",
-                            skill: "Python/php",
-                        },
-                    ],
-                },
-            ],
-        },
-        subhir2: {
-            level: 4,
-
-            name: "Interns",
-            Interns: [{
-                    img: "./shahzad.png",
-                    name: "shahzad",
-                },
-                {
-                    img: "./shakir.png",
-                    name: "Danial",
-                },
-                {
-                    img: "./aliyan.png",
-                    name: "Mansoor",
-                },
-            ],
-        },
+  level: 1,
+  title: "CEO",
+  name: "Sheraz",
+  age: 28,
+  img: "./sheraz.png",
+  hir: {
+    level: 2,
+    name: "manager",
+    managers: {
+      title: "HR",
+      img: "./saleem.png",
+      name: "saleem",
+      age: 27,
     },
+    subhir1: {
+      level: 3,
+      types: [
+        {
+          name: "front-end",
+          developers: [
+            {
+              img: "./saqib.png",
+              name: "saqib",
+              skill: "html,css,js",
+            },
+            {
+              img: "./aliyan.png",
+              name: "Aliyan",
+              skill: "html,css,js",
+            },
+            {
+              img: "./shakir.png",
+              name: "Shakir",
+              skill: "html,css,js",
+            },
+          ],
+        },
+        {
+          name: "back-end",
+          developers: [
+            {
+              img: "./asad.png",
+              name: "Asad",
+              skill: "Nodejs/php",
+            },
+            {
+              img: "./nasir.png",
+              name: "Nasir",
+              skill: "Nodejs/php",
+            },
+            {
+              img: "./kashif.png",
+              name: "Kashif",
+              skill: "Python/php",
+            },
+            {
+              img: "./kashif.png",
+              name: "Kashif",
+              skill: "Python/php",
+            },
+          ],
+        },
+      ],
+    },
+    subhir2: {
+      level: 4,
+
+      name: "Interns",
+      Interns: [
+        {
+          img: "./shahzad.png",
+          name: "shahzad",
+        },
+        {
+          img: "./shakir.png",
+          name: "Danial",
+        },
+        {
+          img: "./aliyan.png",
+          name: "Mansoor",
+        },
+      ],
+    },
+  },
 };
 
 // this is /for cep
@@ -90,18 +94,16 @@ let docCeo = document.querySelectorAll(".CeoDiv");
 let Ceo = document.getElementById("Ceobtn");
 // const sheraz = document.querySelectorAll(".sheraz");
 
-
-
 Ceobtn.addEventListener("click", (e) => {
-    console.log("what is e ", e.target);
+  console.log("what is e ", e.target);
 
-    console.log(docCeo);
-    const cardd = (e.target.innerHTML = "CEO");
-    console.log("if : ", docCeo[0].style.display !== "block");
+  console.log(docCeo);
+  const cardd = (e.target.innerHTML = "CEO");
+  console.log("if : ", docCeo[0].style.display !== "block");
 
-    //below this line its my code for cards
+  //below this line its my code for cards
 
-    docCeo[0].innerHTML = `
+  docCeo[0].innerHTML = `
     <div class="sheraz dp2">
     <div class="image">
     <img src="${deta.img}" class="img">
@@ -119,26 +121,25 @@ Ceobtn.addEventListener("click", (e) => {
     </div>
     
     `;
-    if (docCeo[0].style.display === "none" || docCeo[0].style.display === "") {
-        // CEO section is hidden or not displayed
-        docCeo[0].style.display = "block"; // Show the CEO section
-        e.target.innerHTML = "Back"; // Change CeoBtn text to "Back"
-    } else {
-        // CEO section is visible
-        docCeo[0].style.display = "none"; // Hide the CEO section
-        e.target.innerHTML = "CEO"; // Change CeoBtn text back to "CEO"
-    }
-
+  if (docCeo[0].style.display === "none" || docCeo[0].style.display === "") {
+    // CEO section is hidden or not displayed
+    docCeo[0].style.display = "block"; // Show the CEO section
+    e.target.innerHTML = "Back"; // Change CeoBtn text to "Back"
+  } else {
+    // CEO section is visible
+    docCeo[0].style.display = "none"; // Hide the CEO section
+    e.target.innerHTML = "CEO"; // Change CeoBtn text back to "CEO"
+  }
 });
 
 // now is for manager button
 
 const Man = document.getElementById("hrbtn");
 Man.addEventListener("click", (e) => {
-    let HrDiv = document.querySelectorAll(".HrDiv ");
-    // Man.style.display = "none";
-    // for (let i = 0; i < HrDiv.length; i++) {
-    HrDiv[0].innerHTML = ` <div class = "Saleem dp2">
+  let HrDiv = document.querySelectorAll(".HrDiv ");
+  // Man.style.display = "none";
+  // for (let i = 0; i < HrDiv.length; i++) {
+  HrDiv[0].innerHTML = ` <div class = "Saleem dp2">
 
             <img src = "${deta.hir.managers.img}" id="imgSalem" class = "img">
 
@@ -154,30 +155,29 @@ Man.addEventListener("click", (e) => {
 
         `;
 
-    if (HrDiv[0].style.display === "none" || HrDiv[0].style.display === "") {
-        HrDiv[0].style.display = "block";
-        e.target.innerHTML = "Back";
-    } else {
+  if (HrDiv[0].style.display === "none" || HrDiv[0].style.display === "") {
+    HrDiv[0].style.display = "block";
+    e.target.innerHTML = "Back";
+  } else {
+    HrDiv[0].style.display = "none";
+    e.target.innerHTML = "CEO";
+  }
 
-        HrDiv[0].style.display = "none";
-        e.target.innerHTML = "CEO";
-    }
-
-    console.log(deta.name);
+  console.log(deta.name);
 });
 
 // from this line i have make the functions for the front end developer
 
-const frnt_dev = document.getElementById("F_Dvlpr");
+let frnt_dev = document.querySelector(".F_Dvlpr ");
 const Frnt = document.getElementById("FrontDevbtn");
 
-Frnt.addEventListener("click", () => {
-    Frnt.style.display = "none";
-    const FrntDvlpr = deta.hir.subhir1.types[0].developers;
-    for (let i = 0; i < FrntDvlpr.length; i++) {
-        console.log(FrntDvlpr[i].name);
+Frnt.addEventListener("click", (e) => {
+  // Frnt.style.display = "none";
+  const FrntDvlpr = deta.hir.subhir1.types[0].developers;
+  for (let i = 0; i < FrntDvlpr.length; i++) {
+    console.log(FrntDvlpr[i].name);
 
-        frnt_dev.innerHTML += `
+    frnt_dev.innerHTML = `
 
         <div class = "FDev dp3">
 
@@ -194,7 +194,15 @@ Frnt.addEventListener("click", () => {
         <div class = "h_line nonelines"> </div>
 
         `;
+
+    if (frnt_dev.style.display === "none" || frnt_dev.style.display === "") {
+      frnt_dev.style.display = "block";
+      e.target.innerHTML = "Back";
+    } else {
+      frnt_dev.style.display = "none";
+      e.target.innerHTML = "Front Dev";
     }
+  }
 });
 
 // fron this line i will make functionality forfront end interns
@@ -205,10 +213,10 @@ let F_inters = document.getElementById("intrns");
 let F_inters_btn = document.getElementById("FrontInters");
 
 F_inters_btn.addEventListener("click", () => {
-    const FrntInts = deta.hir.subhir2.Interns;
-    F_inters_btn.style.display = "none";
-    for (let i = 0; i < FrntInts.length; i++) {
-        F_inters.innerHTML += `
+  const FrntInts = deta.hir.subhir2.Interns;
+  F_inters_btn.style.display = "none";
+  for (let i = 0; i < FrntInts.length; i++) {
+    F_inters.innerHTML += `
 
         <div class = "FDev2 dp3" >
 
@@ -225,8 +233,8 @@ F_inters_btn.addEventListener("click", () => {
 
 
         `;
-    }
-    ` < button > heelo < /button>`;
+  }
+  ` < button > heelo < /button>`;
 });
 
 // for frontend interns
@@ -253,13 +261,13 @@ F_inters_btn.addEventListener("click", () => {
 const bck_dev = document.getElementById("B_Dvlpr");
 const bckDevBtn = document.getElementById("bckDev");
 bckDevBtn.addEventListener("click", () => {
-    const backDvlpr = deta.hir.subhir1.types[1].developers;
+  const backDvlpr = deta.hir.subhir1.types[1].developers;
 
-    bckDevBtn.style.display = "none";
-    for (let i = 0; i < backDvlpr.length; i++) {
-        console.log(backDvlpr[i].name);
+  bckDevBtn.style.display = "none";
+  for (let i = 0; i < backDvlpr.length; i++) {
+    console.log(backDvlpr[i].name);
 
-        bck_dev.innerHTML += ` 
+    bck_dev.innerHTML += ` 
         <div class = "B_Dev dp3" >
                 <img src = "${backDvlpr[i].img}"class = "img">
 
@@ -272,5 +280,5 @@ bckDevBtn.addEventListener("click", () => {
             </div> 
             <div class = "h_line nonelines" ></div>
             `;
-    }
+  }
 });
