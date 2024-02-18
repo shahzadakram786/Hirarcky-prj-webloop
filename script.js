@@ -89,12 +89,16 @@ const deta = {
 let docCeo = document.querySelectorAll(".CeoDiv");
 let Ceo = document.getElementById("Ceobtn");
 // const sheraz = document.querySelectorAll(".sheraz");
+
+
+
 Ceobtn.addEventListener("click", (e) => {
     console.log("what is e ", e.target);
 
     console.log(docCeo);
     const cardd = (e.target.innerHTML = "CEO");
     console.log("if : ", docCeo[0].style.display !== "block");
+
     //below this line its my code for cards
 
     docCeo[0].innerHTML = `
@@ -125,41 +129,16 @@ Ceobtn.addEventListener("click", (e) => {
         e.target.innerHTML = "CEO"; // Change CeoBtn text back to "CEO"
     }
 
-
-    // if (docCeo[0].display == "none") {
-
-    //     console.log("if statement  = ", docCeo[0].style.display !== "none"); // docCeo[0].style.display = "none";
-
-
-    // } else {
-    //     console.log("else :", docCeo[0].style.display === "none");
-    //     var ceobackbtn = e.target.innerHTML = "Back";
-    //     e.target.style.display = "block";
-
-
-
-
-
-    // }
-    // ceobackbtn.addEventListener("click", () => {
-    //     console.log("ceobackbtn clicked");
-    //     // .target.style.display = "none";
-    //     docCeo[0].style.display == "none";
-
-
-    // })
-
-
 });
 
 // now is for manager button
 
 const Man = document.getElementById("hrbtn");
-Man.addEventListener("click", () => {
+Man.addEventListener("click", (e) => {
     let HrDiv = document.querySelectorAll(".HrDiv ");
-    Man.style.display = "none";
+    // Man.style.display = "none";
     // for (let i = 0; i < HrDiv.length; i++) {
-    HrDiv[0].innerHTML += ` <div class = "Saleem dp2">
+    HrDiv[0].innerHTML = ` <div class = "Saleem dp2">
 
             <img src = "${deta.hir.managers.img}" id="imgSalem" class = "img">
 
@@ -174,6 +153,15 @@ Man.addEventListener("click", () => {
         </div> 
 
         `;
+
+    if (HrDiv[0].style.display === "none" || HrDiv[0].style.display === "") {
+        HrDiv[0].style.display = "block";
+        e.target.innerHTML = "Back";
+    } else {
+
+        HrDiv[0].style.display = "none";
+        e.target.innerHTML = "CEO";
+    }
 
     console.log(deta.name);
 });
