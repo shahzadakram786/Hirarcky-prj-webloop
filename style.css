@@ -357,3 +357,9 @@ button:hover {
     transform: scale(1.4);
     /* margin-top: 10px; */
 }
+
+#bckDev {
+    margin-left: 40%;
+    /* background-color: red; */
+    width: 20%;
+}
