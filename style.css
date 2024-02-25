@@ -363,3 +363,53 @@ button:hover {
     /* background-color: red; */
     width: 20%;
 }
+
+.butn {
+    color: white;
+    background-color: red;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px dashed white;
+    border-top: 2px dashed yellow;
+}
+
+
+/* */
+
+
+/* this code is for border corner    */
+
+.ShahButton {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    margin: 50px;
+}
+
+.ShahButton:after,
+.ShahButton:before {
+    content: '';
+    position: absolute;
+    height: 60%;
+    width: 70%;
+}
+
+.ShahButton:before {
+    top: -5px;
+    left: -5px;
+    border-top: 1px dashed rgba(255, 166, 0, 0.783);
+    border-left: 1px dashed orange;
+    border-radius: 10px 0 0 0;
+}
+
+
+/* this code is for only before and after; */
+
+.ShahButton:after {
+    bottom: -5px;
+    right: -5px;
+    border-bottom: 1px dashed;
+    border-right: 1px dashed;
+    border-radius: 0 0 10px 0;
+    border-image: conic-gradient(45deg, rgb(0, 143, 104), rgb(250, 224, 66))1;
+}

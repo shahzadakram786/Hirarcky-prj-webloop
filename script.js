@@ -170,10 +170,10 @@ const Frnt = document.getElementById("FrontDevbtn");
 Frnt.addEventListener("click", (e) => {
     // Frnt.style.display = "none";
     const FrntDvlpr = deta.hir.subhir1.types[0].developers;
-    for (let i = 0; i < FrntDvlpr.length; i++) {
+    for (let i = 0; i < FrntDvlpr; i++) {
         console.log(FrntDvlpr[i].name);
 
-        frnt_dev.innerHTML = `
+        frnt_dev.innerHTML += `
 
         <div class = "FDev dp3">
 
@@ -190,7 +190,6 @@ Frnt.addEventListener("click", (e) => {
         <div class = "h_line nonelines"> </div>
 
         `;
-
     }
     if (frnt_dev.style.display === "none" || frnt_dev.style.display === "") {
         frnt_dev.style.display = "block";
@@ -230,20 +229,8 @@ F_inters_btn.addEventListener("click", () => {
 
         `;
     }
-
 });
 
-// for frontend interns
-
-// const frnt_intrns = document.getElementById("FrontInters");
-// frnt_intrns.addEventListener("click", () => {
-//     const frntIntrns = deta.hir.subhir2.Interns;
-//     for (let i = 0; i < frntIntrns.length; i++) {
-//         console.log(frntIntrns[i].name);
-
-//     }
-
-// });
 
 // const backDvlpr = deta.hir.subhir1.types[1].developers;
 
@@ -276,7 +263,6 @@ bckDevBtn.addEventListener("click", (e) => {
             </div> 
             <div class = "h_line nonelines" ></div>
             `;
-
     }
     if (bck_dev.style.display === "none" || bck_dev.style.display === "") {
         bck_dev.style.display = "block";
@@ -285,5 +271,4 @@ bckDevBtn.addEventListener("click", (e) => {
         bck_dev.style.display = "none";
         e.target.innerHTML = "Back Dev";
     }
-
 });
